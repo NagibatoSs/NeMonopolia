@@ -1,5 +1,6 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "QG2REs751QoIdz9wu8lGmTujuW1fuJwjSshTqAZ4KEzWQjNRaWdP2BFNW1ytudvLJKRfo18jMFRE+MbnbI4CLg==",
   "success": true,
   "projectFilePath": "/Users/ilyas/Projects/NeMonopolia/NeMonopolia3/NeMonopolia3.iOS/NeMonopolia3.iOS.csproj",
@@ -7,6 +8,15 @@
     "/Users/ilyas/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
     "/Users/ilyas/.nuget/packages/xamarin.essentials/1.6.1/xamarin.essentials.1.6.1.nupkg.sha512",
     "/Users/ilyas/.nuget/packages/xamarin.forms/5.0.0.2012/xamarin.forms.5.0.0.2012.nupkg.sha512"
+=======
+  "dgSpecHash": "yAQ+ZxpzoMvBzC3ADYdsJog5GyXkL71jXj2bgAxNDHQbouP/mvHTYVXpjET5zq6p/vCzTFftK+4xGFtHpyRrCA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\zhura\\OneDrive\\Рабочий стол\\NeMonopolia\\NeMonopolia3\\NeMonopolia3.iOS\\NeMonopolia3.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\zhura\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\zhura\\.nuget\\packages\\xamarin.essentials\\1.7.3\\xamarin.essentials.1.7.3.nupkg.sha512",
+    "C:\\Users\\zhura\\.nuget\\packages\\xamarin.forms\\5.0.0.2515\\xamarin.forms.5.0.0.2515.nupkg.sha512"
+>>>>>>> 1e623dab3aef05b2490bd1cbd5ab8925b4b3a417
   ],
   "logs": []
 }

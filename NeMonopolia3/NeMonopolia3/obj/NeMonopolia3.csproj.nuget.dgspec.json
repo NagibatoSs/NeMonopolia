@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "/Users/ilyas/Projects/NeMonopolia/NeMonopolia3/NeMonopolia3/NeMonopolia3.csproj": {}
   },
   "projects": {
@@ -12,6 +13,19 @@
         "projectPath": "/Users/ilyas/Projects/NeMonopolia/NeMonopolia3/NeMonopolia3/NeMonopolia3.csproj",
         "packagesPath": "/Users/ilyas/.nuget/packages/",
         "outputPath": "/Users/ilyas/Projects/NeMonopolia/NeMonopolia3/NeMonopolia3/obj/",
+=======
+    "C:\\Users\\zhura\\OneDrive\\Рабочий стол\\NeMonopolia\\NeMonopolia3\\NeMonopolia3\\NeMonopolia3.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\zhura\\OneDrive\\Рабочий стол\\NeMonopolia\\NeMonopolia3\\NeMonopolia3\\NeMonopolia3.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\zhura\\OneDrive\\Рабочий стол\\NeMonopolia\\NeMonopolia3\\NeMonopolia3\\NeMonopolia3.csproj",
+        "projectName": "NeMonopolia3",
+        "projectPath": "C:\\Users\\zhura\\OneDrive\\Рабочий стол\\NeMonopolia\\NeMonopolia3\\NeMonopolia3\\NeMonopolia3.csproj",
+        "packagesPath": "C:\\Users\\zhura\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\zhura\\OneDrive\\Рабочий стол\\NeMonopolia\\NeMonopolia3\\NeMonopolia3\\obj\\",
+>>>>>>> 1e623dab3aef05b2490bd1cbd5ab8925b4b3a417
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ilyas/.config/NuGet/NuGet.Config"
@@ -47,11 +61,11 @@
             },
             "Xamarin.Essentials": {
               "target": "Package",
-              "version": "[1.6.1, )"
+              "version": "[1.7.3, )"
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[5.0.0.2012, )"
+              "version": "[5.0.0.2515, )"
             }
           },
           "imports": [

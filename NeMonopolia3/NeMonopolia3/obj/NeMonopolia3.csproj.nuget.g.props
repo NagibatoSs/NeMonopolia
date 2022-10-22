@@ -13,6 +13,10 @@
     <SourceRoot Include="/Users/ilyas/.nuget/packages/" />
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+<<<<<<< HEAD
     <Import Project="$(NuGetPackageRoot)xamarin.forms/5.0.0.2012/buildTransitive/Xamarin.Forms.props" Condition="Exists('$(NuGetPackageRoot)xamarin.forms/5.0.0.2012/buildTransitive/Xamarin.Forms.props')" />
+=======
+    <Import Project="$(NuGetPackageRoot)xamarin.forms\5.0.0.2515\buildTransitive\Xamarin.Forms.props" Condition="Exists('$(NuGetPackageRoot)xamarin.forms\5.0.0.2515\buildTransitive\Xamarin.Forms.props')" />
+>>>>>>> 1e623dab3aef05b2490bd1cbd5ab8925b4b3a417
   </ImportGroup>
 </Project>

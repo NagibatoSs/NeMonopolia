@@ -1,3 +1,7 @@
 is_global = true
 build_property.RootNamespace = NeMonopolia3
+<<<<<<< HEAD
 build_property.ProjectDir = /Users/ilyas/Projects/NeMonopolia/NeMonopolia3/NeMonopolia3/
+=======
+build_property.ProjectDir = C:\Users\zhura\OneDrive\Рабочий стол\NeMonopolia\NeMonopolia3\NeMonopolia3\
+>>>>>>> 1e623dab3aef05b2490bd1cbd5ab8925b4b3a417
