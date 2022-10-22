@@ -1,0 +1,15 @@
+/Users/ilyas/Projects/NeMonopolia/NeMonopolia3/NeMonopolia3/bin/Debug/netstandard2.0/NeMonopolia3.deps.json
+/Users/ilyas/Projects/NeMonopolia/NeMonopolia3/NeMonopolia3/bin/Debug/netstandard2.0/NeMonopolia3.dll
+/Users/ilyas/Projects/NeMonopolia/NeMonopolia3/NeMonopolia3/bin/Debug/netstandard2.0/ref/NeMonopolia3.dll
+/Users/ilyas/Projects/NeMonopolia/NeMonopolia3/NeMonopolia3/bin/Debug/netstandard2.0/NeMonopolia3.pdb
+/Users/ilyas/Projects/NeMonopolia/NeMonopolia3/NeMonopolia3/obj/Debug/netstandard2.0/NeMonopolia3.csproj.AssemblyReference.cache
+/Users/ilyas/Projects/NeMonopolia/NeMonopolia3/NeMonopolia3/obj/Debug/netstandard2.0/NeMonopolia3.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ilyas/Projects/NeMonopolia/NeMonopolia3/NeMonopolia3/obj/Debug/netstandard2.0/App.xaml.g.cs
+/Users/ilyas/Projects/NeMonopolia/NeMonopolia3/NeMonopolia3/obj/Debug/netstandard2.0/MainPage.xaml.g.cs
+/Users/ilyas/Projects/NeMonopolia/NeMonopolia3/NeMonopolia3/obj/Debug/netstandard2.0/NeMonopolia3.AssemblyInfoInputs.cache
+/Users/ilyas/Projects/NeMonopolia/NeMonopolia3/NeMonopolia3/obj/Debug/netstandard2.0/NeMonopolia3.AssemblyInfo.cs
+/Users/ilyas/Projects/NeMonopolia/NeMonopolia3/NeMonopolia3/obj/Debug/netstandard2.0/NeMonopolia3.csproj.CoreCompileInputs.cache
+/Users/ilyas/Projects/NeMonopolia/NeMonopolia3/NeMonopolia3/obj/Debug/netstandard2.0/XamlC.stamp
+/Users/ilyas/Projects/NeMonopolia/NeMonopolia3/NeMonopolia3/obj/Debug/netstandard2.0/NeMonopolia3.dll
+/Users/ilyas/Projects/NeMonopolia/NeMonopolia3/NeMonopolia3/obj/Debug/netstandard2.0/ref/NeMonopolia3.dll
+/Users/ilyas/Projects/NeMonopolia/NeMonopolia3/NeMonopolia3/obj/Debug/netstandard2.0/NeMonopolia3.pdb

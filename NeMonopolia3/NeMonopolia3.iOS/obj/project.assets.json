@@ -991,42 +991,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\zhura\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "/Users/ilyas/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\zhura\\OneDrive\\Рабочий стол\\NeMonopolia3\\NeMonopolia3\\NeMonopolia3.iOS\\NeMonopolia3.iOS.csproj",
+      "projectUniqueName": "/Users/ilyas/Projects/NeMonopolia/NeMonopolia3/NeMonopolia3.iOS/NeMonopolia3.iOS.csproj",
       "projectName": "NeMonopolia3.iOS",
-      "projectPath": "C:\\Users\\zhura\\OneDrive\\Рабочий стол\\NeMonopolia3\\NeMonopolia3\\NeMonopolia3.iOS\\NeMonopolia3.iOS.csproj",
-      "packagesPath": "C:\\Users\\zhura\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\zhura\\OneDrive\\Рабочий стол\\NeMonopolia3\\NeMonopolia3\\NeMonopolia3.iOS\\obj\\",
+      "projectPath": "/Users/ilyas/Projects/NeMonopolia/NeMonopolia3/NeMonopolia3.iOS/NeMonopolia3.iOS.csproj",
+      "packagesPath": "/Users/ilyas/.nuget/packages/",
+      "outputPath": "/Users/ilyas/Projects/NeMonopolia/NeMonopolia3/NeMonopolia3.iOS/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\zhura\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "/Users/ilyas/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "xamarinios10"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\zhura\\OneDrive\\Рабочий стол\\NeMonopolia3\\NeMonopolia3\\NeMonopolia3\\NeMonopolia3.csproj": {
-              "projectPath": "C:\\Users\\zhura\\OneDrive\\Рабочий стол\\NeMonopolia3\\NeMonopolia3\\NeMonopolia3\\NeMonopolia3.csproj"
+            "/Users/ilyas/Projects/NeMonopolia/NeMonopolia3/NeMonopolia3/NeMonopolia3.csproj": {
+              "projectPath": "/Users/ilyas/Projects/NeMonopolia/NeMonopolia3/NeMonopolia3/NeMonopolia3.csproj"
             }
           }
         }

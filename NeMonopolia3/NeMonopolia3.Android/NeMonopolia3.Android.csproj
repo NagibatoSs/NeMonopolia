@@ -16,7 +16,6 @@
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
     <TargetFrameworkVersion>v11.0</TargetFrameworkVersion>
     <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
     <AndroidUseAapt2>true</AndroidUseAapt2>
@@ -88,7 +87,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NeMonopolia3\NeMonopolia3.csproj">
-      <Project>{45DA6FA6-F888-422F-8BAA-27A6CBBD8B31}</Project>
+      <Project>{014D0547-8763-4D2F-9249-D20861546919}</Project>
       <Name>NeMonopolia3</Name>
     </ProjectReference>
   </ItemGroup>

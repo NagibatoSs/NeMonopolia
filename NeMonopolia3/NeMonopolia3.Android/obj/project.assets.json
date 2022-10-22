@@ -2142,42 +2142,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\zhura\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "/Users/ilyas/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\zhura\\OneDrive\\Рабочий стол\\NeMonopolia3\\NeMonopolia3\\NeMonopolia3.Android\\NeMonopolia3.Android.csproj",
+      "projectUniqueName": "/Users/ilyas/Projects/NeMonopolia/NeMonopolia3/NeMonopolia3.Android/NeMonopolia3.Android.csproj",
       "projectName": "NeMonopolia3.Android",
-      "projectPath": "C:\\Users\\zhura\\OneDrive\\Рабочий стол\\NeMonopolia3\\NeMonopolia3\\NeMonopolia3.Android\\NeMonopolia3.Android.csproj",
-      "packagesPath": "C:\\Users\\zhura\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\zhura\\OneDrive\\Рабочий стол\\NeMonopolia3\\NeMonopolia3\\NeMonopolia3.Android\\obj\\",
+      "projectPath": "/Users/ilyas/Projects/NeMonopolia/NeMonopolia3/NeMonopolia3.Android/NeMonopolia3.Android.csproj",
+      "packagesPath": "/Users/ilyas/.nuget/packages/",
+      "outputPath": "/Users/ilyas/Projects/NeMonopolia/NeMonopolia3/NeMonopolia3.Android/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\zhura\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "/Users/ilyas/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "monoandroid11.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "monoandroid11.0": {
           "projectReferences": {
-            "C:\\Users\\zhura\\OneDrive\\Рабочий стол\\NeMonopolia3\\NeMonopolia3\\NeMonopolia3\\NeMonopolia3.csproj": {
-              "projectPath": "C:\\Users\\zhura\\OneDrive\\Рабочий стол\\NeMonopolia3\\NeMonopolia3\\NeMonopolia3\\NeMonopolia3.csproj"
+            "/Users/ilyas/Projects/NeMonopolia/NeMonopolia3/NeMonopolia3/NeMonopolia3.csproj": {
+              "projectPath": "/Users/ilyas/Projects/NeMonopolia/NeMonopolia3/NeMonopolia3/NeMonopolia3.csproj"
             }
           }
         }
