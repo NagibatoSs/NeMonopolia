@@ -10,7 +10,7 @@ namespace NeMonopolia3
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new Registration();
         }
 
         protected override void OnStart()
