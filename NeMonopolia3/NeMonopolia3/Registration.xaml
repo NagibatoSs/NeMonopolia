@@ -15,27 +15,34 @@
     <Frame HeightRequest="210" WidthRequest="315" >
         <Image Margin="25" VerticalOptions="Center"  x:Name="Iconimage" />
     </Frame>
-
-       <Frame BorderColor="Gray" Margin="5" CornerRadius="15" WidthRequest="20" HeightRequest="10">
-           <Entry Placeholder="Имя" x:Name="name" Margin="5" WidthRequest="20" HeightRequest="10"/>
+      
+       <Frame BorderColor="Gray" Margin="5" CornerRadius="15" WidthRequest="40" HeightRequest="35">
+           <Entry Placeholder="Имя" x:Name="name" FontSize="Small" />
        </Frame>
 
-       <Frame BorderColor="Gray" Margin="5" CornerRadius="15" HeightRequest="20">
-           <Entry Placeholder="Логин" x:Name="login" Margin="5"  HeightRequest="20"/>
+       <Frame BorderColor="Gray" Margin="5" CornerRadius="15" HeightRequest="35">
+           <Entry Placeholder="Логин" x:Name="login" FontSize="Small"/>
        </Frame>
 
-       <Frame BorderColor="Gray" Margin="5" CornerRadius="15" WidthRequest="20" HeightRequest="10">
-           <Entry Placeholder="Пароль" x:Name="password" Margin="5" />
+       <Frame BorderColor="Gray" Margin="5" CornerRadius="15" WidthRequest="20" HeightRequest="35">
+           <Entry Placeholder="Пароль" x:Name="password" FontSize="Small"/>
        </Frame>
-
-       <CheckBox Color="Blue"/>
-       <Label Text="Я принимаю условия политики конфилициальности" />
-   
-   </StackLayout>
-       
-        
+       <StackLayout Orientation="Horizontal">
+           <CheckBox Color="Blue" HorizontalOptions="Start" />
+           <Label Text="Приннимаю условиея конфидициальности " HorizontalOptions="StartAndExpand"/>
+       </StackLayout>
   
-  
+
+
+    
+      
+       <Button Text="Зарегистрироваться" WidthRequest="80" CornerRadius="20" BackgroundColor="Orange" HeightRequest="45" Margin="18"/>
+          <StackLayout Orientation="Horizontal">
+              <Label Text="Уже есть аккаунт" HorizontalOptions="Start" Margin="10"/>
+              <Label HorizontalOptions="Center" Text="Войти" Margin="10"/>
+          </StackLayout>
+      </StackLayout>
    
+
 </ContentPage>
 

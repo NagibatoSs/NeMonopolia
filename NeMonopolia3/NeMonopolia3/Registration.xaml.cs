@@ -10,7 +10,7 @@ namespace NeMonopolia3
         public Registration()
         {
             InitializeComponent();
-            Iconimage.Source = ImageSource.FromFile("icon.png");
+            Iconimage.Source = ImageSource.FromFile("newicon.png");
             
         }
     }

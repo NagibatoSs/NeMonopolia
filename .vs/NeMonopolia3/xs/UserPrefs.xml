@@ -1,13 +1,30 @@
 ﻿<Properties StartupConfiguration="{A75A8B8A-FE09-4884-BFBF-51033FB2653D}|Default">
   <MonoDevelop.Ide.ItemProperties.NeMonopolia3.Android PreferredExecutionTarget="Android.Pixel_3a_API_30" />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.Pixel_3a_API_30" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="13.0.0.0" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="NeMonopolia3/NeMonopolia3/Registration.xaml">
+    <Files>
+      <File FileName="NeMonopolia3/NeMonopolia3/MainPage.xaml" Line="1" Column="1" />
+      <File FileName="NeMonopolia3/NeMonopolia3/MainPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="NeMonopolia3/NeMonopolia3/AssemblyInfo.cs" Line="1" Column="1" />
+      <File FileName="NeMonopolia3/NeMonopolia3/App.xaml.cs" Line="13" Column="40" />
+      <File FileName="NeMonopolia3/NeMonopolia3/Registration.xaml" Line="34" Column="40" />
+      <File FileName="NeMonopolia3/NeMonopolia3/Registration.xaml.cs" Line="18" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="NeMonopolia3" expanded="True">
-            <Node name="NeMonopolia3" expanded="True" />
+            <Node name="NeMonopolia3" expanded="True">
+              <Node name="App.xaml" expanded="True" />
+              <Node name="MainPage.xaml" expanded="True" />
+              <Node name="Registration.xaml" expanded="True" />
+            </Node>
+            <Node name="NeMonopolia3.Android" expanded="True">
+              <Node name="Resources" expanded="True">
+                <Node name="drawable" expanded="True" />
+              </Node>
+            </Node>
           </Node>
         </State>
       </Pad>
@@ -16,8 +33,9 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.Pixel_3a_API_30" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

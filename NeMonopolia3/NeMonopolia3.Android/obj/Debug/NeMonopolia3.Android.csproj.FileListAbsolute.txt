@@ -650,3 +650,4 @@
 /Users/ilyas/Projects/NeMonopolia/NeMonopolia3/NeMonopolia3.Android/obj/Debug/stamp/_GeneratePackageManagerJava.stamp
 /Users/ilyas/Projects/NeMonopolia/NeMonopolia3/NeMonopolia3.Android/obj/Debug/stamp/_ResolveLibraryProjectImports.stamp
 /Users/ilyas/Projects/NeMonopolia/NeMonopolia3/NeMonopolia3.Android/obj/Debug/res/drawable/icon.png
+/Users/ilyas/Projects/NeMonopolia/NeMonopolia3/NeMonopolia3.Android/obj/Debug/res/drawable/newicon.png
