@@ -25,20 +25,20 @@
        </Frame>
 
         <Label Text="Забыли пароль?" HorizontalOptions="StartAndExpand"
-               FontSize="Medium"
+               FontSize="Small"
                Margin="5"/>
          <Button Text="Войти" WidthRequest="80" CornerRadius="20"
                  BackgroundColor="Orange"
                  HeightRequest="45"
-                 Margin="18"/>
+                 Margin="50"/>
         <StackLayout>
         <Label Text="Нет аккаунта?"
-               FontSize="Medium"
-               Margin="5"
+               FontSize="Small"
+               
                HorizontalOptions="Center"/>
          <Label Text="Регистрация"
-               FontSize="Medium"
-               Margin="5"
+               FontSize="Small"
+               
                HorizontalOptions="Center"/>
         </StackLayout>
          
