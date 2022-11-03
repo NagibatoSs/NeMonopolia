@@ -1,16 +1,28 @@
 ﻿<Properties StartupConfiguration="{A75A8B8A-FE09-4884-BFBF-51033FB2653D}|Default">
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="13.0.0.0" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.Pixel_3a_API_30" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.NeMonopolia3.Android PreferredExecutionTarget="Android.Pixel_3a_API_30" AndroidDesignerPreferredTheme="MainTheme" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="NeMonopolia3/NeMonopolia3/Authorization.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="NeMonopolia3/NeMonopolia3/App.xaml.cs">
     <Files>
-      <File FileName="NeMonopolia3/NeMonopolia3/App.xaml.cs" Line="13" Column="41" />
-      <File FileName="NeMonopolia3/NeMonopolia3/Registration.xaml" Line="39" Column="135" />
-      <File FileName="NeMonopolia3/NeMonopolia3/Registration.xaml.cs" Line="13" Column="13" />
-      <File FileName="NeMonopolia3/NeMonopolia3/Authorization.xaml" Line="48" Column="1" />
-      <File FileName="NeMonopolia3/NeMonopolia3/Authorization.xaml.cs" Line="13" Column="68" />
+      <File FileName="NeMonopolia3/NeMonopolia3/App.xaml.cs" Line="13" Column="42" />
+      <File FileName="NeMonopolia3/NeMonopolia3/Registration.xaml" Line="38" Column="26" />
+      <File FileName="NeMonopolia3/NeMonopolia3/Registration.xaml.cs" Line="22" Column="23" />
+      <File FileName="NeMonopolia3/NeMonopolia3/Authorization.xaml" Line="39" Column="26" />
+      <File FileName="NeMonopolia3/NeMonopolia3/Authorization.xaml.cs" Line="16" Column="23" />
+      <File FileName="NeMonopolia3/NeMonopolia3/Map.xaml" Line="19" Column="1" />
+      <File FileName="NeMonopolia3/NeMonopolia3/Map.xaml.cs" Line="17" Column="1" />
+      <File FileName="NeMonopolia3/NeMonopolia3/AssemblyInfo.cs" Line="1" Column="1" />
+      <File FileName="NeMonopolia3/NeMonopolia3/App.xaml" Line="1" Column="1" />
+      <File FileName="NeMonopolia3/NeMonopolia3.Android/MainActivity.cs" Line="18" Column="18" />
+      <File FileName="NeMonopolia3/NeMonopolia3.Android/Properties/AndroidManifest.xml" />
+      <File FileName="NeMonopolia3/NeMonopolia3/PlayerProfile.xaml" Line="7" Column="18" />
+      <File FileName="NeMonopolia3/NeMonopolia3/PlayerProfile.xaml.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -19,7 +31,8 @@
             <Node name="NeMonopolia3" expanded="True">
               <Node name="App.xaml" expanded="True" />
               <Node name="Authorization.xaml" expanded="True" />
-              <Node name="MainPage.xaml" expanded="True" />
+              <Node name="Map.xaml" expanded="True" />
+              <Node name="PlayerProfile.xaml" expanded="True" />
               <Node name="Registration.xaml" expanded="True" />
             </Node>
             <Node name="NeMonopolia3.Android" expanded="True">
@@ -35,8 +48,4 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.NeMonopolia3.Android PreferredExecutionTarget="Android.Pixel_3a_API_30" />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.Pixel_3a_API_30" />
-  <MonoDevelop.MonoDroid LastDeploySdkVersion="13.0.0.0" />
-  <MultiItemStartupConfigurations />
 </Properties>

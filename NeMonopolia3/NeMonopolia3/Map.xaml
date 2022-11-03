@@ -1,0 +1,21 @@
+﻿<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+    x:Class="NeMonopolia3.Map">
+    <StackLayout>
+        <StackLayout Orientation="Horizontal">
+             <Button HorizontalOptions="CenterAndExpand" BackgroundColor="Blue"
+                    TextColor="White" BorderColor="White"
+                    BorderWidth="5" CornerRadius="10" 
+                    Text="Отсоединиться"></Button>
+            <Button HorizontalOptions="CenterAndExpand" BackgroundColor="Red"
+                    TextColor="White" BorderColor="White"
+                    BorderWidth="5" CornerRadius="10" 
+                    Text="Остановка"></Button>
+        </StackLayout>
+        <maps:Map IsShowingUser="True"/>
+    </StackLayout>
+
+</ContentPage>
+

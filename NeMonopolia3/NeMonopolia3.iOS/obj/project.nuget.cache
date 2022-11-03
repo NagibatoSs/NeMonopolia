@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "YKyAX28x3XPUytG7Kef47+/AwQBdBCOFlu21DoAePik0FmGaUFRqpwL41XXYfC7lm/RRGAhWTnYuf+dI3WcuQg==",
+  "dgSpecHash": "O6YIwqGrY2PO1+263GNStBNmsSdnwEPoYw47//e3OkEvTKTkVE4XB0IYdN/hPX6UCir8pz+3OLlxfZvBcrOTBQ==",
   "success": true,
   "projectFilePath": "/Users/ilyas/Projects/NeMonopolia/NeMonopolia3/NeMonopolia3.iOS/NeMonopolia3.iOS.csproj",
   "expectedPackageFiles": [
     "/Users/ilyas/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
     "/Users/ilyas/.nuget/packages/xamarin.essentials/1.7.3/xamarin.essentials.1.7.3.nupkg.sha512",
-    "/Users/ilyas/.nuget/packages/xamarin.forms/5.0.0.2515/xamarin.forms.5.0.0.2515.nupkg.sha512"
+    "/Users/ilyas/.nuget/packages/xamarin.forms/5.0.0.2515/xamarin.forms.5.0.0.2515.nupkg.sha512",
+    "/Users/ilyas/.nuget/packages/xamarin.forms.maps/5.0.0.2515/xamarin.forms.maps.5.0.0.2515.nupkg.sha512"
   ],
   "logs": []
 }

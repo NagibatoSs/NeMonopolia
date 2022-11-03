@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="NeMonopolia3.PlayerParametr">
+<StackLayout>
+    <!--<StackLayout BackgroundColor="LightSlateGray" Padding="10" Margin="20" >
+        <Label Text="Player name" FontSize="Large"/>
+        <Label Text="Teams name" FontSize="Medium"/>
+        <Label Text="How many stops left" FontSize="Medium"/>
+    </StackLayout>-->
+    <Frame Padding="10" Margin="20" CornerRadius="20">
+         <StackLayout BackgroundColor="White" >
+        <Label Text="Player name" FontSize="Large"/>
+        <Label Text="Teams name" FontSize="Medium"/>
+        <Label Text="How many stops left" FontSize="Medium"/>
+    </StackLayout>
+    </Frame>
+
+    <Label Text="Характеристики" FontSize="Large" HorizontalTextAlignment="Center" TextColor="Black"/>
+    <Frame Margin="20" CornerRadius="10" BackgroundColor="LightGray">
+
+
+    </Frame>
+</StackLayout>
+</ContentPage>
+

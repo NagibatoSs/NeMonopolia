@@ -1,0 +1,53 @@
+﻿<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="NeMonopolia3.Registration"
+    NavigationPage.HasNavigationBar="False">
+   <StackLayout BackgroundColor="#FFFFFF">
+<Label Text="Регистрация"
+VerticalOptions="Center"
+HorizontalTextAlignment="Center"
+FontSize="Large"
+FontAttributes="Bold"
+FontFamily="HeliosCond"
+Margin="10"
+TextColor="#212325"
+/>
+<Image Margin="25" VerticalOptions="Center" HeightRequest="200" x:Name="Iconimage" />
+
+<Frame BorderColor="Gray" Margin="5" CornerRadius="15" WidthRequest="40" HeightRequest="35">
+<Entry Placeholder="Имя" x:Name="name" FontSize="Small" />
+</Frame>
+
+<Frame BorderColor="Gray" Margin="5" CornerRadius="15" HeightRequest="35">
+<Entry Placeholder="Логин" x:Name="login" FontSize="Small"/>
+</Frame>
+
+<Frame BorderColor="Gray" Margin="5" CornerRadius="15" WidthRequest="20" HeightRequest="35">
+<Entry Placeholder="Пароль" x:Name="password" FontSize="Small"/>
+</Frame>
+<StackLayout Orientation="Horizontal" Spacing="0" Margin="10,0,20,20">
+<CheckBox Color="#034EA2" HorizontalOptions="Start" VerticalOptions="Center" />
+<Label Text="Принимаю условиея конфидициальности " VerticalOptions="Center" HorizontalOptions="StartAndExpand"/>
+</StackLayout>
+<Button Text="Зарегистрироваться" WidthRequest="80" CornerRadius="15"
+BackgroundColor="#F7941E"
+TextColor="#FCFCFC"
+HeightRequest="45"
+Margin="30,0,30,0"
+Clicked="Button_Clicked_1"
+/>
+<StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+<Button Text="Уже есть аккаунт? Войти"
+BackgroundColor="#FFFFFF"
+FontSize="Small"
+TextColor="#034EA2"
+HorizontalOptions="Center"
+Clicked="Button_Clicked"
+/>
+</StackLayout>
+</StackLayout>
+   
+
+</ContentPage>
+

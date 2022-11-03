@@ -9,8 +9,8 @@ namespace NeMonopolia3
         public App()
         {
             InitializeComponent();
-
-            MainPage = new Authorization();
+           // MainPage = new NavigationPage(new Authorization());
+             MainPage = new PlayerParametr();
         }
 
         protected override void OnStart()

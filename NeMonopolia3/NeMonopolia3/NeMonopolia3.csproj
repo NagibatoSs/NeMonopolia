@@ -13,5 +13,28 @@
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2515" />
     <PackageReference Include="Xamarin.Essentials" Version="1.7.3" />
+    <PackageReference Include="Xamarin.Forms.Maps" Version="5.0.0.2515" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Xamarin.Forms.Maps" />
+    <None Remove="Xamarin.Forms.GoogleMaps" />
+    <None Remove="Player\" />
+    <None Remove="Team\" />
+    <None Remove="Authentication \" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Player\" />
+    <Folder Include="Team\" />
+    <Folder Include="Authentication \" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Authentication \Registration.xaml.cs">
+      <DependentUpon>Registration.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Authentication \Authorization.xaml.cs">
+      <DependentUpon>Authorization.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
