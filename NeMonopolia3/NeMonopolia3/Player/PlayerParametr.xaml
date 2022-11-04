@@ -10,7 +10,7 @@
         <Label Text="How many stops left" FontSize="Medium"/>
     </StackLayout>-->
     <Frame Padding="10" Margin="20" CornerRadius="20">
-         <StackLayout BackgroundColor="White" >
+    <StackLayout BackgroundColor="White" >
         <Label Text="Player name" FontSize="Large"/>
         <Label Text="Teams name" FontSize="Medium"/>
         <Label Text="How many stops left" FontSize="Medium"/>
