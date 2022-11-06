@@ -1,13 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "O6YIwqGrY2PO1+263GNStBNmsSdnwEPoYw47//e3OkEvTKTkVE4XB0IYdN/hPX6UCir8pz+3OLlxfZvBcrOTBQ==",
+  "dgSpecHash": "41WIIQpBkqPIr2bYGfgh9wk7J40pGtcu0sWfgo8/ELGb4BhiA8RpVW/rFNpmYQH204DQxY/RC0vyCemxA0E8og==",
   "success": true,
   "projectFilePath": "/Users/ilyas/Projects/NeMonopolia/NeMonopolia3/NeMonopolia3.iOS/NeMonopolia3.iOS.csproj",
   "expectedPackageFiles": [
     "/Users/ilyas/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
     "/Users/ilyas/.nuget/packages/xamarin.essentials/1.7.3/xamarin.essentials.1.7.3.nupkg.sha512",
     "/Users/ilyas/.nuget/packages/xamarin.forms/5.0.0.2515/xamarin.forms.5.0.0.2515.nupkg.sha512",
-    "/Users/ilyas/.nuget/packages/xamarin.forms.maps/5.0.0.2515/xamarin.forms.maps.5.0.0.2515.nupkg.sha512"
+    "/Users/ilyas/.nuget/packages/xamarin.forms.maps/5.0.0.2515/xamarin.forms.maps.5.0.0.2515.nupkg.sha512",
+    "/Users/ilyas/.nuget/packages/zxing.net.mobile/2.4.1/zxing.net.mobile.2.4.1.nupkg.sha512",
+    "/Users/ilyas/.nuget/packages/zxing.net.mobile.forms/2.4.1/zxing.net.mobile.forms.2.4.1.nupkg.sha512"
   ],
   "logs": []
 }

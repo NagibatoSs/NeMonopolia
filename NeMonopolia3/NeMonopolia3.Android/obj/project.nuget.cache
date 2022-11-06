@@ -1,10 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "L3nZf+oNnKs/1dXvXQb6JjEWzT+fsEhfFcUe22GcIijoLIg3bJc1ZAKbpdV7BzYr1SSRv6Xk8d8E10Ap9fEnSQ==",
+  "dgSpecHash": "rr7zvVSD+Io8z4BYK0UIjUAXt82KdstzBCPnl18XuwBNGHToP/8RWRi6450ahz6+QmGrRsn6YjZ8xymQ+fg7DA==",
   "success": true,
   "projectFilePath": "/Users/ilyas/Projects/NeMonopolia/NeMonopolia3/NeMonopolia3.Android/NeMonopolia3.Android.csproj",
   "expectedPackageFiles": [
+    "/Users/ilyas/.nuget/packages/fastandroidcamera/2.0.0/fastandroidcamera.2.0.0.nupkg.sha512",
     "/Users/ilyas/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/ilyas/.nuget/packages/xamarin.android.support.annotations/25.4.0.2/xamarin.android.support.annotations.25.4.0.2.nupkg.sha512",
+    "/Users/ilyas/.nuget/packages/xamarin.android.support.compat/25.4.0.2/xamarin.android.support.compat.25.4.0.2.nupkg.sha512",
+    "/Users/ilyas/.nuget/packages/xamarin.android.support.core.ui/25.4.0.2/xamarin.android.support.core.ui.25.4.0.2.nupkg.sha512",
+    "/Users/ilyas/.nuget/packages/xamarin.android.support.core.utils/25.4.0.2/xamarin.android.support.core.utils.25.4.0.2.nupkg.sha512",
+    "/Users/ilyas/.nuget/packages/xamarin.android.support.fragment/25.4.0.2/xamarin.android.support.fragment.25.4.0.2.nupkg.sha512",
+    "/Users/ilyas/.nuget/packages/xamarin.android.support.media.compat/25.4.0.2/xamarin.android.support.media.compat.25.4.0.2.nupkg.sha512",
+    "/Users/ilyas/.nuget/packages/xamarin.android.support.v4/25.4.0.2/xamarin.android.support.v4.25.4.0.2.nupkg.sha512",
     "/Users/ilyas/.nuget/packages/xamarin.androidx.activity/1.2.4.1/xamarin.androidx.activity.1.2.4.1.nupkg.sha512",
     "/Users/ilyas/.nuget/packages/xamarin.androidx.annotation/1.2.0.1/xamarin.androidx.annotation.1.2.0.1.nupkg.sha512",
     "/Users/ilyas/.nuget/packages/xamarin.androidx.annotation.experimental/1.1.0.1/xamarin.androidx.annotation.experimental.1.1.0.1.nupkg.sha512",
@@ -67,7 +75,9 @@
     "/Users/ilyas/.nuget/packages/xamarin.googleplayservices.base/117.1.0/xamarin.googleplayservices.base.117.1.0.nupkg.sha512",
     "/Users/ilyas/.nuget/packages/xamarin.googleplayservices.basement/117.1.0/xamarin.googleplayservices.basement.117.1.0.nupkg.sha512",
     "/Users/ilyas/.nuget/packages/xamarin.googleplayservices.maps/117.0.0/xamarin.googleplayservices.maps.117.0.0.nupkg.sha512",
-    "/Users/ilyas/.nuget/packages/xamarin.googleplayservices.tasks/117.0.0/xamarin.googleplayservices.tasks.117.0.0.nupkg.sha512"
+    "/Users/ilyas/.nuget/packages/xamarin.googleplayservices.tasks/117.0.0/xamarin.googleplayservices.tasks.117.0.0.nupkg.sha512",
+    "/Users/ilyas/.nuget/packages/zxing.net.mobile/2.4.1/zxing.net.mobile.2.4.1.nupkg.sha512",
+    "/Users/ilyas/.nuget/packages/zxing.net.mobile.forms/2.4.1/zxing.net.mobile.forms.2.4.1.nupkg.sha512"
   ],
   "logs": []
 }

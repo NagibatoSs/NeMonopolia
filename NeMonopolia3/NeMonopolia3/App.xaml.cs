@@ -9,8 +9,8 @@ namespace NeMonopolia3
         public App()
         {
             InitializeComponent();
-           // MainPage = new NavigationPage(new Authorization());
-             MainPage = new TabPage();
+            MainPage = new NavigationPage(new ActionView());
+           //  MainPage = new ActionView();
         }
 
         protected override void OnStart()

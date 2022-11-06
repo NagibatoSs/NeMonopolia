@@ -9,19 +9,24 @@
         <Label Text="Teams name" FontSize="Medium"/>
         <Label Text="How many stops left" FontSize="Medium"/>
     </StackLayout>-->
-    <Frame Padding="10" Margin="20" CornerRadius="20">
-    <StackLayout BackgroundColor="White" >
-        <Label Text="Player name" FontSize="Large"/>
-        <Label Text="Teams name" FontSize="Medium"/>
-        <Label Text="How many stops left" FontSize="Medium"/>
-    </StackLayout>
-    </Frame>
-
+<Frame Padding="10" Margin="20" CornerRadius="20">
+<StackLayout BackgroundColor="White" >
+<Label Text="Player name" x:Name="playerName" FontSize="Large"/>
+<Label Text="Teams name" x:Name="TeamName" FontSize="Medium"/>
+<Label Text="How many stops left" x:Name="StopsLeft" FontSize="Medium"/>
+</StackLayout>
+</Frame>
     <Label Text="Характеристики" FontSize="Large" HorizontalTextAlignment="Center" TextColor="Black"/>
-    <Frame Margin="20" CornerRadius="10" BackgroundColor="LightGray">
+    <Frame x:Name="characteristicsFrame" Margin="20" CornerRadius="10" BackgroundColor="LightGray">
+<StackLayout x:Name="charactStack">
+<Label x:Name="l1" FontSize="20"></Label>
+<Label x:Name="l2" FontSize="20"></Label>
+<Label x:Name="l3" FontSize="20"></Label>
+<Label x:Name="l4" FontSize="20"></Label>
+<Label x:Name="l5" FontSize="20"></Label>
+</StackLayout>
+</Frame>
 
-
-    </Frame>
 </StackLayout>
 </ContentPage>
 

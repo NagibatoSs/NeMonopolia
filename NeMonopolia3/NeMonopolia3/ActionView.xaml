@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="NeMonopolia3.ActionView"
+    BackgroundImage="background.png">
+    <StackLayout>
+    <Label Text="Выберите дальнейшее действие"
+VerticalOptions="Center"
+HorizontalTextAlignment="Center"
+FontSize="20"
+FontAttributes="Bold"
+FontFamily="HeliosCond"
+Margin="10"
+TextColor="White"
+/>
+<Grid >
+<Grid.RowDefinitions>
+<RowDefinition></RowDefinition>
+</Grid.RowDefinitions>
+<Grid.ColumnDefinitions>
+<ColumnDefinition></ColumnDefinition>
+<ColumnDefinition></ColumnDefinition>
+</Grid.ColumnDefinitions>
+<Image Grid.Row="0" Grid.Column="0" Source="busstop.jpg"
+Margin="15"
+Aspect="AspectFit"
+HorizontalOptions="Start"
+HeightRequest="80"
+WidthRequest="90"/>
+<Label Grid.Row="0" Grid.Column="1" Text="Название остановки"
+VerticalOptions="Center"
+HorizontalTextAlignment="Start"
+FontSize="Medium"
+FontFamily="HeliosCond"
+Margin="10"
+TextColor="White"
+/>
+</Grid>
+
+<Label Text="Информация"
+VerticalOptions="Center"
+HorizontalTextAlignment="Start"
+FontSize="Large"
+FontAttributes="Bold"
+FontFamily="HeliosCond"
+Margin="10"
+TextColor="#212325"
+/>
+
+<Label Text="Информация"
+VerticalOptions="Center"
+HorizontalTextAlignment="Start"
+FontSize="Large"
+FontAttributes="None"
+FontFamily="HeliosCond"
+Margin="10"
+TextColor="#212325"
+/>
+<Grid>
+<Grid.RowDefinitions>
+<RowDefinition></RowDefinition>
+</Grid.RowDefinitions>
+<Grid.ColumnDefinitions>
+<ColumnDefinition></ColumnDefinition>
+<ColumnDefinition></ColumnDefinition>
+</Grid.ColumnDefinitions>
+<Label Grid.Row="0" Grid.Column="0" Text="565.99"
+Margin="10"
+VerticalOptions="Center"
+HorizontalTextAlignment="Start"
+FontSize="Large"
+FontAttributes="None"
+FontFamily="HeliosCond"
+TextColor="#212325"
+/>
+<Image Grid.Row="0" Grid.Column="1" Source="profits.png"
+Aspect="AspectFit"
+HorizontalOptions="Start"
+HeightRequest="25"
+WidthRequest="25"/>
+</Grid>
+
+<Grid>
+<Grid.RowDefinitions>
+<RowDefinition></RowDefinition>
+<RowDefinition></RowDefinition>
+<RowDefinition></RowDefinition>
+</Grid.RowDefinitions>
+<Grid.ColumnDefinitions>
+<ColumnDefinition></ColumnDefinition>
+</Grid.ColumnDefinitions>
+<Button Grid.Column="0" Grid.Row="0" Text="Действие 1" HorizontalOptions="Center"
+Margin="10"
+VerticalOptions="CenterAndExpand"
+BackgroundColor="Orange"
+CornerRadius="15"
+WidthRequest="200"
+        Clicked="Button_Clicked"/>
+<Button Grid.Column="0" Grid.Row="1" Text="Действие 2" HorizontalOptions="Center"
+VerticalOptions="CenterAndExpand"
+BackgroundColor="Orange"
+CornerRadius="15"
+WidthRequest="200"/>
+<Button Grid.Column="0" Grid.Row="2" Text="Действие 3" HorizontalOptions="Center"
+VerticalOptions="CenterAndExpand"
+BackgroundColor="Orange"
+CornerRadius="15"
+WidthRequest="200"/>
+</Grid>
+</StackLayout>
+
+
+
+</ContentPage>
+

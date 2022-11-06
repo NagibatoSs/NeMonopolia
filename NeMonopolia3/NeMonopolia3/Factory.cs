@@ -12,8 +12,11 @@ namespace NeMonopolia3
         public Factory()
         {
         }
-        public int id;
-        public int price;
+        
+        public string Name { get; set; }
+        public int Id { get; set; }
+        public int Price { get; set; }
+        public string Image { get; set; }
         public int rent;
         public int security;
         public int bonus;

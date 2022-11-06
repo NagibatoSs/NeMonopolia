@@ -8,23 +8,32 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="NeMonopolia3/NeMonopolia3/Manipulation.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="NeMonopolia3/NeMonopolia3/Scanner.xaml.cs">
     <Files>
-      <File FileName="NeMonopolia3/NeMonopolia3/App.xaml.cs" Line="13" Column="39" />
+      <File FileName="NeMonopolia3/NeMonopolia3/App.xaml.cs" Line="13" Column="32" />
       <File FileName="NeMonopolia3/NeMonopolia3/TabPage.xaml" Line="9" Column="49" />
       <File FileName="NeMonopolia3/NeMonopolia3/TabPage.xaml.cs" Line="8" Column="46" />
-      <File FileName="NeMonopolia3/NeMonopolia3/PlayerCharacteristic.cs" Line="20" Column="30" />
-      <File FileName="NeMonopolia3/NeMonopolia3/Factory.cs" Line="15" Column="23" />
-      <File FileName="NeMonopolia3/NeMonopolia3/Manipulation.cs" Line="77" Column="8" />
-      <File FileName="NeMonopolia3/NeMonopolia3/PlayerInfo.cs" Line="14" Column="51" />
+      <File FileName="NeMonopolia3/NeMonopolia3/Manipulation.cs" Line="67" Column="22" />
+      <File FileName="NeMonopolia3/NeMonopolia3/Player/PlayerParametr.xaml" Line="12" Column="5" />
+      <File FileName="NeMonopolia3/NeMonopolia3/Player/AllParametrs.xaml" Line="14" Column="5" />
+      <File FileName="NeMonopolia3/NeMonopolia3/PlayerProfile.xaml" Line="1" Column="1" />
+      <File FileName="NeMonopolia3/NeMonopolia3/Factory.cs" Line="20" Column="29" />
+      <File FileName="NeMonopolia3/NeMonopolia3/Player/Bag.xaml" Line="16" Column="75" />
+      <File FileName="NeMonopolia3/NeMonopolia3/Player/Bag.xaml.cs" Line="19" Column="54" />
+      <File FileName="NeMonopolia3/NeMonopolia3/FactoryInfo.xaml" Line="8" Column="55" />
+      <File FileName="NeMonopolia3/NeMonopolia3/FactoryInfo.xaml.cs" Line="17" Column="1" />
+      <File FileName="NeMonopolia3/NeMonopolia3/Scanner.xaml" Line="8" Column="58" />
+      <File FileName="NeMonopolia3/NeMonopolia3/Scanner.xaml.cs" Line="21" Column="16" />
+      <File FileName="NeMonopolia3/NeMonopolia3.Android/MainActivity.cs" Line="67" Column="6" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="NeMonopolia3" expanded="True">
             <Node name="NeMonopolia3" expanded="True">
-              <Node name="App.xaml" expanded="True" />
+              <Node name="Scanner.xaml" expanded="True" />
             </Node>
+            <Node name="NeMonopolia3.Android" expanded="True" />
           </Node>
         </State>
       </Pad>

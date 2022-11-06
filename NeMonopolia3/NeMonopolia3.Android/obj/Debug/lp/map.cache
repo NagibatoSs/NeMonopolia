@@ -1,3 +1,4 @@
+FastAndroidCamera.dll
 FormsViewGroup.dll
 Xamarin.AndroidX.Activity.dll
 Xamarin.AndroidX.Annotation.dll
@@ -61,6 +62,8 @@ Xamarin.GooglePlayServices.Base.dll
 Xamarin.GooglePlayServices.Basement.dll
 Xamarin.GooglePlayServices.Maps.dll
 Xamarin.GooglePlayServices.Tasks.dll
+ZXing.Net.Mobile.Forms.Android.dll
+ZXingNetMobile.dll
 androidx.versionedparcelable.versionedparcelable.aar
 androidx.arch.core.core-runtime.aar
 androidx.lifecycle.lifecycle-runtime.aar

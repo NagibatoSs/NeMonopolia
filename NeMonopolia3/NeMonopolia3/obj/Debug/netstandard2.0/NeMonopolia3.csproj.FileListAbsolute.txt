@@ -21,3 +21,6 @@
 /Users/ilyas/Projects/NeMonopolia/NeMonopolia3/NeMonopolia3/obj/Debug/netstandard2.0/Player/AllParametrs.xaml.g.cs
 /Users/ilyas/Projects/NeMonopolia/NeMonopolia3/NeMonopolia3/obj/Debug/netstandard2.0/Player/Bag.xaml.g.cs
 /Users/ilyas/Projects/NeMonopolia/NeMonopolia3/NeMonopolia3/obj/Debug/netstandard2.0/Player/PlayerParametr.xaml.g.cs
+/Users/ilyas/Projects/NeMonopolia/NeMonopolia3/NeMonopolia3/obj/Debug/netstandard2.0/FactoryInfo.xaml.g.cs
+/Users/ilyas/Projects/NeMonopolia/NeMonopolia3/NeMonopolia3/obj/Debug/netstandard2.0/Scanner.xaml.g.cs
+/Users/ilyas/Projects/NeMonopolia/NeMonopolia3/NeMonopolia3/obj/Debug/netstandard2.0/ActionView.xaml.g.cs

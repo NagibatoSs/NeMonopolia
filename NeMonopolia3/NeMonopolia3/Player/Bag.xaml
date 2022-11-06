@@ -12,7 +12,8 @@
     </StackLayout>
     </Frame>
        <CollectionView x:Name="myCollectionView"
-                       SelectionMode="Single">
+                       SelectionMode="Single"
+                       SelectionChanged="myCollectionView_SelectionChanged">
            <CollectionView.ItemTemplate>
                <DataTemplate>
                    <Grid Padding="10">
@@ -24,16 +25,16 @@
                            <ColumnDefinition Width="Auto"/>
                            <ColumnDefinition Width="Auto"/>
                        </Grid.ColumnDefinitions>
-                       <Image Grid.RowSpan="2"
+                       <!--<Image Grid.RowSpan="2"
                               Source="{Binding Image}"
                               Aspect="AspectFill"
                               HeightRequest="50"
-                              WidthRequest="50"/>
+                              WidthRequest="50"/>-->
                        <Label Text="{Binding Name}"
                               Grid.Column="1"
                               FontAttributes="Bold"/>
-                       <Label Text="{Binding Category}"
-                              Grid.Column="1"
+                       <Label Text="{Binding Price}"
+                              Grid.Column="1" Grid.Row="1"
                               FontAttributes="Italic"
                               VerticalOptions="End"/>
 
