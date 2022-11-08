@@ -1,10 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "41WIIQpBkqPIr2bYGfgh9wk7J40pGtcu0sWfgo8/ELGb4BhiA8RpVW/rFNpmYQH204DQxY/RC0vyCemxA0E8og==",
+  "dgSpecHash": "/r1BXFVV76NUFMU28Vlxuu7321HSP/24lta7KMIISZ1+E0A+s0cTnXqaCbSNsfdLVZfzIKNmL3gd3howwCOYaA==",
   "success": true,
   "projectFilePath": "/Users/ilyas/Projects/NeMonopolia/NeMonopolia3/NeMonopolia3.iOS/NeMonopolia3.iOS.csproj",
   "expectedPackageFiles": [
+    "/Users/ilyas/.nuget/packages/sqlite-net-pcl/1.8.116/sqlite-net-pcl.1.8.116.nupkg.sha512",
+    "/Users/ilyas/.nuget/packages/sqlitepclraw.bundle_green/2.0.4/sqlitepclraw.bundle_green.2.0.4.nupkg.sha512",
+    "/Users/ilyas/.nuget/packages/sqlitepclraw.core/2.0.4/sqlitepclraw.core.2.0.4.nupkg.sha512",
+    "/Users/ilyas/.nuget/packages/sqlitepclraw.provider.dynamic_cdecl/2.0.4/sqlitepclraw.provider.dynamic_cdecl.2.0.4.nupkg.sha512",
+    "/Users/ilyas/.nuget/packages/system.buffers/4.4.0/system.buffers.4.4.0.nupkg.sha512",
+    "/Users/ilyas/.nuget/packages/system.memory/4.5.3/system.memory.4.5.3.nupkg.sha512",
     "/Users/ilyas/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/ilyas/.nuget/packages/system.runtime.compilerservices.unsafe/4.5.2/system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
     "/Users/ilyas/.nuget/packages/xamarin.essentials/1.7.3/xamarin.essentials.1.7.3.nupkg.sha512",
     "/Users/ilyas/.nuget/packages/xamarin.forms/5.0.0.2515/xamarin.forms.5.0.0.2515.nupkg.sha512",
     "/Users/ilyas/.nuget/packages/xamarin.forms.maps/5.0.0.2515/xamarin.forms.maps.5.0.0.2515.nupkg.sha512",
