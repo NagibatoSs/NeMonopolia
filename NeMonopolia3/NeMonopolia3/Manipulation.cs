@@ -10,10 +10,10 @@ namespace NeMonopolia3
         {
         }
         const int BonusSum = 5000;
-       static Bag bag = new Bag();
+        static Bag bag = new Bag();
         public static void BuyFactory(PlayerCharacteristic player, Factory factory)
         {
-            if (factory.owner != null)
+            if (factory.OwnerId != 0) ///// warning null is not sutible need start with 0
             {
                 PayRent(player, factory);
             }
@@ -23,11 +23,12 @@ namespace NeMonopolia3
                 return; //not enough money maan можно эксептион
             }
             player.Money = player.Money - factory.Price;
-            ///
-            player.Portfolio = new List<Factory>();
-            player.Portfolio.Add(factory);
-            
-            bag.Refresh(player.Portfolio);
+
+            /////
+         //   player.PortfolioId = new List<int>();
+         //   player.PortfolioId.Add(factory.Id);
+
+            //bag.Refresh(player.Portfolio);
 
         }
 
@@ -39,17 +40,24 @@ namespace NeMonopolia3
                 return; //BANCROT MAFFAKA
             }
              visitor.Money = visitor.Money - factory.Price;
-            factory.owner.Money = factory.owner.Money + factory.rent;
+            int id = factory.OwnerId;
+            var owner =  App.DataBase.GetPlayerCharacById(id);
+            owner.Money += factory.rent;
         }
 
         public static void Loosing(PlayerCharacteristic player)
         {
+
+
             player.IsPlaying = false;
-            foreach (var factory in player.Portfolio)
-            {
-                factory.owner = null;
-            }
-            player.Portfolio = null;
+            //foreach (var factoryid in player.PortfolioId)
+            //{
+            //    // factory.owner = null;
+            //    var factory = App.DataBase.GetFactoryById(factoryid);
+            //    factory.OwnerId = 0;
+              
+            //}
+            //player.PortfolioId = null;
         }
         public static int SumRent()
         {
@@ -73,10 +81,12 @@ namespace NeMonopolia3
         }
         public static void SellingToBank(Factory factory)
         {
-            factory.owner.Money += factory.Price / 2;
-            var deleting = factory.owner.Portfolio.Where(f => f.Id == factory.Id);
-            factory.owner.Portfolio.Remove(deleting.First()); ///take it easy maaaaaaaaaaaaaaaaaaaan
-            factory.owner = null;  ///levell find ...
+            var player = App.DataBase.GetPlayerCharacById(factory.OwnerId);
+            player.Money += factory.Price / 2;
+            
+           // var deleting = player.PortfolioId.Where(f => f == factory.Id);
+            //player.PortfolioId.Remove(deleting.First()); ///take it easy maaaaaaaaaaaaaaaaaaaan
+            factory.OwnerId = 0;  ///levell find ...
 
         }
 

@@ -1,32 +1,38 @@
 ﻿using System;
+using SQLite;
+using SQLiteNetExtensions.Attributes;
+
 namespace NeMonopolia3
 {
     public class Factory
     {
-        public enum TypeofFActory
-        {
-            first,
-            second,
-            three
-        }
+        
+        //public enum TypeofFActory
+        //{
+        //    first,
+        //    second,
+        //    three
+        //}
         public Factory()
         {
         }
-        
-        public string Name { get; set; }
+        [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
+        public string Name { get; set; }
         public int Price { get; set; }
         public string Image { get; set; }
-        public int rent;
-        public int security;
-        public int bonus;
-        public TypeofFActory type;
-        public PlayerCharacteristic owner;
+        public int rent { get; set; }
+        public int security { get; set; }
+        public int bonus { get; set; }
+        [ForeignKey(typeof(PlayerCharacteristic))]
+        public int OwnerId { get; set; }
+       // public TypeofFActory type { get; set; }
+       //public PlayerCharacteristic owner { get; set; }
 
-        public int changerIntellect;
-        public int changerHonesty;
-        public int changerCommunication;
-        public int changerLuck;
+        public int changerIntellect { get; set; }
+        public int changerHonesty { get; set; }
+        public int changerCommunication { get; set; }
+        public int changerLuck { get; set; }
         // public Geo location //locatin with creating class "Geo"
     }
 }

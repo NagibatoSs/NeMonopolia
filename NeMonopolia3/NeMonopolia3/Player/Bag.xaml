@@ -30,13 +30,13 @@
                               Aspect="AspectFill"
                               HeightRequest="50"
                               WidthRequest="50"/>-->
-                       <Label Text="{Binding Name}"
+                       <Label Text="{Binding Id}"
                               Grid.Column="1"
                               FontAttributes="Bold"/>
-                       <Label Text="{Binding Price}"
+                       <!--<Label Text="{Binding Price}"
                               Grid.Column="1" Grid.Row="1"
                               FontAttributes="Italic"
-                              VerticalOptions="End"/>
+                              VerticalOptions="End"/>-->
 
                    </Grid>
 

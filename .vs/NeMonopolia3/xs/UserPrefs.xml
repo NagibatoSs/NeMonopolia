@@ -1,54 +1,33 @@
 ﻿<Properties StartupConfiguration="{A75A8B8A-FE09-4884-BFBF-51033FB2653D}|Default">
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="13.0.0.0" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.Pixel_3a_API_30" />
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.MonoDroid LastDeploySdkVersion="13.0.0.0" />
-  <MonoDevelop.Ide.ItemProperties.NeMonopolia3.Android AndroidDesignerPreferredTheme="MainTheme" PreferredExecutionTarget="Android.Pixel_3a_API_30" />
   <MonoDevelop.Ide.Workbench ActiveDocument="NeMonopolia3/NeMonopolia3/Player/Bag.xaml.cs">
     <Files>
-      <File FileName="NeMonopolia3/NeMonopolia3/App.xaml.cs" Line="12" Column="57" />
-      <File FileName="NeMonopolia3/NeMonopolia3/Factory.cs" Line="15" Column="9" />
-      <File FileName="NeMonopolia3/NeMonopolia3/Player/Bag.xaml" Line="32" Column="53" />
-      <File FileName="NeMonopolia3/NeMonopolia3/Player/Bag.xaml.cs" Line="39" Column="10" />
-      <File FileName="NeMonopolia3/NeMonopolia3/FactoryInfo.xaml" Line="8" Column="55" />
-      <File FileName="NeMonopolia3/NeMonopolia3/FactoryInfo.xaml.cs" Line="17" Column="1" />
-      <File FileName="NeMonopolia3/NeMonopolia3/Mocks.cs" Line="56" Column="13" />
-      <File FileName="NeMonopolia3/NeMonopolia3/Manipulation.cs" Line="28" Column="43" />
-      <File FileName="NeMonopolia3/NeMonopolia3/ActionView.xaml" Line="99" Column="32" />
-      <File FileName="NeMonopolia3/NeMonopolia3/ActionView.xaml.cs" Line="21" Column="64" />
-      <File FileName="NeMonopolia3/NeMonopolia3/Player/PlayerCharacteristic.cs" Line="1" Column="1" />
-      <File FileName="NeMonopolia3/NeMonopolia3/Authentication /Authorization.xaml.cs" Line="19" Column="10" />
-      <File FileName="NeMonopolia3/NeMonopolia3/Authentication /Registration.xaml.cs" Line="1" Column="1" />
-      <File FileName="NeMonopolia3/NeMonopolia3/PlayerProfile.xaml" Line="1" Column="1" />
-      <File FileName="NeMonopolia3/NeMonopolia3/PlayerProfile.xaml.cs" Line="1" Column="1" />
+      <File FileName="NeMonopolia3/NeMonopolia3/App.xaml.cs" Line="29" Column="9" />
+      <File FileName="NeMonopolia3/NeMonopolia3/Factory.cs" />
+      <File FileName="NeMonopolia3/NeMonopolia3/Player/PlayerCharacteristic.cs" />
+      <File FileName="NeMonopolia3/NeMonopolia3/Player/PlayerInfo.cs" />
+      <File FileName="NeMonopolia3/NeMonopolia3/DataBase.cs" Line="27" Column="1" />
+      <File FileName="NeMonopolia3/NeMonopolia3/Player/Bag.xaml.cs" Line="50" Column="1" />
+      <File FileName="NeMonopolia3/NeMonopolia3/Player/Bag.xaml" />
+      <File FileName="NeMonopolia3/NeMonopolia3/Mocks.cs" />
+      <File FileName="NeMonopolia3/NeMonopolia3/Manipulation.cs" />
+      <File FileName="NeMonopolia3/NeMonopolia3/ActionView.xaml.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="NeMonopolia3" expanded="True">
             <Node name="NeMonopolia3" expanded="True">
-              <Node name="Authentication " expanded="True">
-                <Node name="Authorization.xaml" expanded="True" />
-                <Node name="Registration.xaml" expanded="True" />
-              </Node>
               <Node name="Player" expanded="True">
                 <Node name="Bag.xaml" expanded="True" />
                 <Node name="PlayerParametr.xaml" expanded="True" />
               </Node>
               <Node name="ActionView.xaml" expanded="True" />
               <Node name="App.xaml" expanded="True" />
-              <Node name="FactoryInfo.xaml" expanded="True" />
-              <Node name="PlayerProfile.xaml" expanded="True" />
-              <Node name="Scanner.xaml" expanded="True" />
-            </Node>
-            <Node name="NeMonopolia3.Android" expanded="True">
-              <Node name="Resources" expanded="True">
-                <Node name="drawable" expanded="True" />
-              </Node>
             </Node>
           </Node>
         </State>
@@ -58,4 +37,8 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.Pixel_3a_API_30" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.NeMonopolia3.Android PreferredExecutionTarget="Android.Pixel_3a_API_30" AndroidDesignerPreferredTheme="MainTheme" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

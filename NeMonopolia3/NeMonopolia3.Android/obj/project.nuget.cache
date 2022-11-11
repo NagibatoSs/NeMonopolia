@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "0pda3p5UkLXdchkdHjrOQeL1kWYF+nE7pMceO05TOyylO3tpS4jGcwuP0hPzus4S645wsHOkxkdXPyIGH+kM8g==",
+  "dgSpecHash": "b3pRUeMBwg/aWPBF5hsa3uXbsCKHUZ2kdfLdep4gWyFjfuysWnsPLjrzf9qAvg1SHe6iG6ZhANM6GV3buGOwVA==",
   "success": true,
   "projectFilePath": "/Users/ilyas/Projects/NeMonopolia/NeMonopolia3/NeMonopolia3.Android/NeMonopolia3.Android.csproj",
   "expectedPackageFiles": [
     "/Users/ilyas/.nuget/packages/fastandroidcamera/2.0.0/fastandroidcamera.2.0.0.nupkg.sha512",
+    "/Users/ilyas/.nuget/packages/newtonsoft.json/9.0.1/newtonsoft.json.9.0.1.nupkg.sha512",
     "/Users/ilyas/.nuget/packages/sqlite-net-pcl/1.8.116/sqlite-net-pcl.1.8.116.nupkg.sha512",
+    "/Users/ilyas/.nuget/packages/sqlitenetextensions/2.1.0/sqlitenetextensions.2.1.0.nupkg.sha512",
     "/Users/ilyas/.nuget/packages/sqlitepclraw.bundle_green/2.0.4/sqlitepclraw.bundle_green.2.0.4.nupkg.sha512",
     "/Users/ilyas/.nuget/packages/sqlitepclraw.core/2.0.4/sqlitepclraw.core.2.0.4.nupkg.sha512",
     "/Users/ilyas/.nuget/packages/sqlitepclraw.lib.e_sqlite3.android/2.0.4/sqlitepclraw.lib.e_sqlite3.android.2.0.4.nupkg.sha512",

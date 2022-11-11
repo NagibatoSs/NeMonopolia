@@ -13,7 +13,7 @@ namespace NeMonopolia3
         }
         protected override void OnAppearing()
         {
-            playerName.Text = Mocks.GetPlayerInfo().name;
+            playerName.Text = Mocks.GetPlayerInfo().Name;
             StopsLeft.Text = "Остановок до бонуса: " + (5 - Mocks.GetPlayerCharacteristic().StopCount).ToString();
             l1.Text = "Деньги: " + Mocks.GetPlayerCharacteristic().Money;
             l2.Text = "Интеллект: " + Mocks.GetPlayerCharacteristic().Intellect;

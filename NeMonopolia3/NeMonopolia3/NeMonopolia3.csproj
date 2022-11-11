@@ -17,6 +17,7 @@
     <PackageReference Include="ZXing.Net.Mobile.Forms" Version="2.4.1" />
     <PackageReference Include="ZXing.Net.Mobile" Version="2.4.1" />
     <PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
+    <PackageReference Include="SQLiteNetExtensions" Version="2.1.0" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Xamarin.Forms.Maps" />
@@ -27,6 +28,7 @@
     <None Remove="ZXing.Net.Mobile.Forms" />
     <None Remove="ZXing.Net.Mobile" />
     <None Remove="sqlite-net-pcl" />
+    <None Remove="SQLiteNetExtensions" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Player\" />
