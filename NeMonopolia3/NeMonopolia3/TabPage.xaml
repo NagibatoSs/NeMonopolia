@@ -7,7 +7,8 @@
     NavigationPage.HasNavigationBar="False"
     xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
     android:TabbedPage.ToolbarPlacement="Bottom">
-    <local:Map Title="Home"/>
-    <local:PlayerProfile Title="Profile"/>
+    <local:Map Title="Карта"/>
+    <local:PlayerProfile Title="Профиль"/>
+    <local:Scanner Title="QR-код"/>
 </TabbedPage>
 

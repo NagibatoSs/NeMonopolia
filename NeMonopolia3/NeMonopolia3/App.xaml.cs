@@ -14,17 +14,25 @@ namespace NeMonopolia3
             {
                 if (dataBase == null)
                 {
+                    //dataBase = new DataBase(Path.Combine(Environment.
+                    //    GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "MyTest.db"));
+                    //dataBase = new DataBase(Path.Combine(Environment.
+                    //  GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "My.db"));
+                    //dataBase = new DataBase(Path.Combine(Environment.
+                    //  GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "MyData.db"));
+                    //dataBase = new DataBase(Path.Combine(Environment.
+                    //    GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "DataForVideo.db"));
                     dataBase = new DataBase(Path.Combine(Environment.
-                        GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "MyTest.db"));
+                        GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "DataForVideoSecond.db"));
                 }
                 return dataBase;
             }
         }
         public App()
         {
-            InitializeComponent();
-           // MainPage = new NavigationPage(new ActionView());
-             MainPage = new Bag();
+            InitializeComponent();           
+           // MainPage = new ActionView();
+           MainPage = new NavigationPage(new TabPage());
         }
         
         protected override void OnStart()

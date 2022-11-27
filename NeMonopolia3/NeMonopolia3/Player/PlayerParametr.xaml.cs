@@ -13,13 +13,13 @@ namespace NeMonopolia3
         }
         protected override void OnAppearing()
         {
-            playerName.Text = Mocks.GetPlayerInfo().Name;
-            StopsLeft.Text = "Остановок до бонуса: " + (5 - Mocks.GetPlayerCharacteristic().StopCount).ToString();
-            l1.Text = "Деньги: " + Mocks.GetPlayerCharacteristic().Money;
-            l2.Text = "Интеллект: " + Mocks.GetPlayerCharacteristic().Intellect;
-            l3.Text = "Честность: " + Mocks.GetPlayerCharacteristic().Honesty;
-            l4.Text = "Удача: " + Mocks.GetPlayerCharacteristic().Luck;
-            l5.Text = "Коммуникабельность: " + Mocks.GetPlayerCharacteristic().Communication;
+            playerName.Text = "TATARIN";
+            StopsLeft.Text = "Остановок до бонуса: " + (5 - App.DataBase.GetPlayers()[0].StopCount).ToString();
+            l1.Text = "Деньги: " + App.DataBase.GetPlayers()[0].Money;
+            l2.Text = "Интеллект: " + App.DataBase.GetPlayers()[0].Intellect;
+            l3.Text = "Честность: " + App.DataBase.GetPlayers()[0].Honesty;
+            l4.Text = "Удача: " + App.DataBase.GetPlayers()[0].Luck;
+            l5.Text = "Коммуникабельность: " + App.DataBase.GetPlayers()[0].Communication;
         }
     }
 }

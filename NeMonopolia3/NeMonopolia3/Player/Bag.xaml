@@ -4,20 +4,16 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="NeMonopolia3.Bag">
    <StackLayout>
-   <Frame Padding="10" Margin="20" CornerRadius="20">
-    <StackLayout BackgroundColor="White" >
-        <Label Text="Player name" FontSize="Large"/>
-        <Label Text="Teams name" FontSize="Medium"/>
-        <Label Text="How many stops left" FontSize="Medium"/>
-    </StackLayout>
-    </Frame>
+ 
        <CollectionView x:Name="myCollectionView"
                        SelectionMode="Single"
-                       SelectionChanged="myCollectionView_SelectionChanged">
+                       >
            <CollectionView.ItemTemplate>
                <DataTemplate>
                    <Grid Padding="10">
                        <Grid.RowDefinitions>
+                           <RowDefinition Height="Auto"/>
+                           <RowDefinition Height="Auto"/>
                            <RowDefinition Height="Auto"/>
                            <RowDefinition Height="Auto"/>
                        </Grid.RowDefinitions>
@@ -30,13 +26,17 @@
                               Aspect="AspectFill"
                               HeightRequest="50"
                               WidthRequest="50"/>-->
-                       <Label Text="{Binding Id}"
-                              Grid.Column="1"
+                       <Label Text="{Binding Name}"
+                              Grid.Column="0"
                               FontAttributes="Bold"/>
-                       <!--<Label Text="{Binding Price}"
+                       <Label Text="{Binding Price}"
                               Grid.Column="1" Grid.Row="1"
                               FontAttributes="Italic"
-                              VerticalOptions="End"/>-->
+                              VerticalOptions="End"/>
+                       <Label Text="{Binding Rent}"
+                              Grid.Column="1" Grid.Row="2"
+                              FontAttributes="Italic"
+                              VerticalOptions="End"/>
 
                    </Grid>
 

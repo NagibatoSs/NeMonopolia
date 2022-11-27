@@ -1,44 +1,56 @@
 ﻿<Properties StartupConfiguration="{A75A8B8A-FE09-4884-BFBF-51033FB2653D}|Default">
-  <MonoDevelop.MonoDroid LastDeploySdkVersion="13.0.0.0" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.Pixel_3a_API_30" />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/ilyas/Projects/NeMonopolia/NeMonopolia3/NeMonopolia3/UploadView.xaml.cs" relfile="NeMonopolia3/NeMonopolia3/UploadView.xaml.cs" line="21" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="NeMonopolia3/NeMonopolia3/Player/Bag.xaml.cs">
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="13.0.0.0" />
+  <MonoDevelop.Ide.ItemProperties.NeMonopolia3.Android PreferredExecutionTarget="Android.Pixel_3a_API_30" AndroidDesignerPreferredTheme="MainTheme" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <Debugger.DebugSourceFolders>
+    <String>/Users/ilyas/Library/Caches/VisualStudio/17.0/Symbols/raw.githubusercontent.com/mono/mono/dffa5ab92245f2419238a35b7c2052e9a24036b4</String>
+  </Debugger.DebugSourceFolders>
+  <MonoDevelop.Ide.Workbench ActiveDocument="NeMonopolia3/NeMonopolia3/Map.xaml.cs">
     <Files>
-      <File FileName="NeMonopolia3/NeMonopolia3/App.xaml.cs" Line="29" Column="9" />
-      <File FileName="NeMonopolia3/NeMonopolia3/Factory.cs" />
-      <File FileName="NeMonopolia3/NeMonopolia3/Player/PlayerCharacteristic.cs" />
-      <File FileName="NeMonopolia3/NeMonopolia3/Player/PlayerInfo.cs" />
-      <File FileName="NeMonopolia3/NeMonopolia3/DataBase.cs" Line="27" Column="1" />
-      <File FileName="NeMonopolia3/NeMonopolia3/Player/Bag.xaml.cs" Line="50" Column="1" />
-      <File FileName="NeMonopolia3/NeMonopolia3/Player/Bag.xaml" />
-      <File FileName="NeMonopolia3/NeMonopolia3/Mocks.cs" />
-      <File FileName="NeMonopolia3/NeMonopolia3/Manipulation.cs" />
-      <File FileName="NeMonopolia3/NeMonopolia3/ActionView.xaml.cs" />
+      <File FileName="NeMonopolia3/NeMonopolia3/App.xaml.cs" Line="34" Column="14" />
+      <File FileName="NeMonopolia3/NeMonopolia3/ActionView.xaml.cs" Line="1" Column="1" />
+      <File FileName="NeMonopolia3/NeMonopolia3/Manipulation.cs" Line="1" Column="1" />
+      <File FileName="NeMonopolia3/NeMonopolia3/DataBase.cs" Line="1" Column="1" />
+      <File FileName="NeMonopolia3/NeMonopolia3/TabPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="NeMonopolia3/NeMonopolia3/TabPage.xaml" Line="1" Column="1" />
+      <File FileName="NeMonopolia3/NeMonopolia3/Player/Bag.xaml" Line="1" Column="1" />
+      <File FileName="NeMonopolia3/NeMonopolia3/DataLoading.cs" Line="1" Column="1" />
+      <File FileName="NeMonopolia3/NeMonopolia3/Map.xaml.cs" Line="51" Column="1" />
+      <File FileName="NeMonopolia3/NeMonopolia3/LocationService.cs" Line="26" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="NeMonopolia3" expanded="True">
             <Node name="NeMonopolia3" expanded="True">
+              <Node name="Authentication " expanded="True">
+                <Node name="Authorization.xaml" expanded="True" />
+              </Node>
               <Node name="Player" expanded="True">
                 <Node name="Bag.xaml" expanded="True" />
                 <Node name="PlayerParametr.xaml" expanded="True" />
               </Node>
               <Node name="ActionView.xaml" expanded="True" />
               <Node name="App.xaml" expanded="True" />
+              <Node name="Map.xaml" expanded="True" />
+              <Node name="Scanner.xaml" expanded="True" />
+              <Node name="TabPage.xaml" expanded="True" />
+              <Node name="UploadView.xaml" expanded="True" />
+            </Node>
+            <Node name="NeMonopolia3.Android" expanded="True">
+              <Node name="Properties" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.Pixel_3a_API_30" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.NeMonopolia3.Android PreferredExecutionTarget="Android.Pixel_3a_API_30" AndroidDesignerPreferredTheme="MainTheme" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

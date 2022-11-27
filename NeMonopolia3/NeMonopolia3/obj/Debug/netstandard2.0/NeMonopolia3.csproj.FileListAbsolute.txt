@@ -24,3 +24,4 @@
 /Users/ilyas/Projects/NeMonopolia/NeMonopolia3/NeMonopolia3/obj/Debug/netstandard2.0/FactoryInfo.xaml.g.cs
 /Users/ilyas/Projects/NeMonopolia/NeMonopolia3/NeMonopolia3/obj/Debug/netstandard2.0/Scanner.xaml.g.cs
 /Users/ilyas/Projects/NeMonopolia/NeMonopolia3/NeMonopolia3/obj/Debug/netstandard2.0/ActionView.xaml.g.cs
+/Users/ilyas/Projects/NeMonopolia/NeMonopolia3/NeMonopolia3/obj/Debug/netstandard2.0/UploadView.xaml.g.cs

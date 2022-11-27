@@ -12,7 +12,7 @@
             <Button HorizontalOptions="CenterAndExpand" BackgroundColor="Red"
                     TextColor="White" BorderColor="White"
                     BorderWidth="5" CornerRadius="10" 
-                    Text="Остановка"></Button>
+                    Text="Выход" Clicked="Button_Clicked"></Button>
         </StackLayout>
         <maps:Map IsShowingUser="True"/>
     </StackLayout>
