@@ -7,6 +7,7 @@ namespace NeMonopolia3
 {
     public partial class Scanner : ContentPage
     {
+        public string qrText; 
         public Scanner()
         {
             InitializeComponent();
@@ -17,20 +18,23 @@ namespace NeMonopolia3
             Device.BeginInvokeOnMainThread(() =>
             {
                 scannerText.Text = result.Text + "(type:" +
-                result.BarcodeFormat.ToString();
-                Open(result.Text);
+                 result.BarcodeFormat.ToString();
+                qrText = result.Text;
+                Open(qrText);
             });
         }
-        public async void Open(string result)
+        public async void Open(string code)
         {
-            DisplayAlert("Поздравляю","Вы вошли в ТС","OK");
-            var code = FindCode(result);
+            var Code = FindCode(code);
+            ServerClass serverClass = APIclass.GetAPI(code);
+            string route =  serverClass.data.route;
+            DisplayAlert("Поздравляю","Вы вошли в ТС" + route,"OK");            
             await Navigation.PushAsync(new Map(code)); //передаем код ТС
         }
         public string FindCode(string code)
         {
-            // return code.Substring(20); ///send the real code
-            return "18-002-2-0000331";
+             return code.Substring(20);                ///send the real code
+           // return "18-001-1-0005704";
            
         }
     }

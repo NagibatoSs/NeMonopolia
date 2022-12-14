@@ -38,9 +38,9 @@ namespace NeMonopolia3
             f.Id = 1;
             f.Name = "Bank Zenit";
             f.Price = 300000;
-            f.rent = 30000;
-            f.security = 20;
-            f.bonus = 100;
+            f.Rent = 30000;
+            f.Security = 20;
+            f.Bonus = 100;
            // f.Type = Factory.TypeofFActory.first;
             // f.owner = GetPlayerCharacteristic();
 
@@ -49,9 +49,9 @@ namespace NeMonopolia3
             f1.Id = 2;
             f1.Name = "Tatar Bazar";
             f1.Price = 100000;
-            f1.rent = 10000;
-            f1.security = 10;
-            f1.bonus = 10;
+            f1.Rent = 10000;
+            f1.Security = 10;
+            f1.Bonus = 10;
            // f1.Type = Factory.TypeofFActory.second;
             //  f1.owner = GetPlayerCharacteristic();
 

@@ -17,13 +17,13 @@
 
 <Frame BorderColor="Gray" Margin="5" CornerRadius="15" HeightRequest="35">
 <StackLayout>
-<Entry Placeholder="Логин" x:Name="name" FontSize="Small" PlaceholderColor="#91919F" FontFamily="HeliosCond" />
+<Entry Placeholder="Логин" x:Name="login" FontSize="Small" PlaceholderColor="#91919F" FontFamily="HeliosCond" />
 </StackLayout>
 </Frame>
 
 <Frame BorderColor="Gray" Margin="5" CornerRadius="15" HeightRequest="35">
 <StackLayout>
-<Entry Placeholder="Пароль" x:Name="login" PlaceholderColor="#91919F" FontSize="Small"/>
+<Entry Placeholder="Пароль" x:Name="password" PlaceholderColor="#91919F" FontSize="Small"/>
 </StackLayout>
 </Frame>
 

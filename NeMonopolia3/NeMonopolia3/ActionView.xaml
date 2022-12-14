@@ -4,7 +4,9 @@ xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 x:Class="NeMonopolia3.ActionView"
 BackgroundImage="background.png">
 <StackLayout>
-<Label Text="Выберите дальнейшее действие"
+    <StackLayout Orientation="Horizontal">
+
+        <Label Text="Выберите дальнейшее действие"
 VerticalOptions="Center"
 HorizontalTextAlignment="Center"
 FontSize="20"
@@ -13,6 +15,18 @@ FontFamily="HeliosCond"
 Margin="10"
 TextColor="White"
 />
+    <ImageButton  Source="info.png"
+Aspect="AspectFit"
+HorizontalOptions="End"
+HeightRequest="20"
+WidthRequest="20"
+Margin="15,0, 20, 0"
+Clicked="ImageButton_Clicked"
+                  BackgroundColor="#034EA2"
+/>
+
+</StackLayout>
+
 <Grid >
 <Grid.RowDefinitions>
 <RowDefinition></RowDefinition>
@@ -118,6 +132,28 @@ HeightRequest="60"
 FontSize="Medium"
 TextColor="white"
         Clicked="Button_Clicked_2"/>
+    <StackLayout Orientation="Horizontal">
+        
+            <Label x:Name="pBalance"  Text="Баланс: " 
+VerticalOptions="Center"
+                   HorizontalOptions="Center"
+HorizontalTextAlignment="Center"
+FontSize="Large"
+FontAttributes="None"
+FontFamily="HeliosCond"
+TextColor="#212325"
+Margin="10, 10, 0, 0"
+/>
+        <Image Grid.Row="0" Grid.Column="1" Source="profits.png"
+Aspect="AspectFit"
+HorizontalOptions="Center"
+HeightRequest="25"
+WidthRequest="25"
+Margin="0, 10, 0, 0"
+/>
+
+    </StackLayout>
+
 </StackLayout>
 </StackLayout>
 </ContentPage>

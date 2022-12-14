@@ -1,16 +1,27 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <ContentPage
-    xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    x:Class="NeMonopolia3.AllParametrs">
-    <StackLayout>
-    <Frame Padding="10" Margin="20" CornerRadius="20">
-    <StackLayout BackgroundColor="White" >
-        <Label Text="Player name" FontSize="Large"/>
-        <Label Text="Teams name" FontSize="Medium"/>
-        <Label Text="How many stops left" FontSize="Medium"/>
-    </StackLayout>
-    </Frame>
-    </StackLayout>
+xmlns="http://xamarin.com/schemas/2014/forms"
+xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+x:Class="NeMonopolia3.AllParametrs"
+BackgroundImage="background.png">
+<StackLayout>
+<Frame Padding="10" Margin="20" CornerRadius="20">
+<StackLayout BackgroundColor="White" >
+<Label TextColor="#373132" FontFamily="HeliosCond" Text="Игрок" x:Name="playerName" FontSize="Large"/>
+<Label TextColor="#8C8C8C" FontFamily="HeliosCond" Text="Название команды" x:Name="TeamName" FontSize="Medium"/>
+<Label TextColor="#F7941E" FontFamily="HeliosCond" Text="Остановок до бонуса: 0" x:Name="StopsLeft" FontSize="Medium"/>
+</StackLayout>
+</Frame>
+<Label Text="Общая статистика" FontAttributes="Bold" FontFamily="HeliosCond" FontSize="25" HorizontalTextAlignment="Start" TextColor="#373132"
+Margin="30, 20, 0, 0"/>
+<Frame x:Name="characteristicsFrame" Margin="20, 10, 20, 0" Padding="15, 15" CornerRadius="10" BackgroundColor="White">
+<StackLayout x:Name="charactStack">
+<Label TextColor="#373132" FontFamily="HeliosCond" Text="Пройдено остановок: 12" FontSize="20"></Label>
+<Label TextColor="#373132" FontFamily="HeliosCond" Text="Куплено предприятий: 4" FontSize="20"></Label>
+<Label TextColor="#373132" FontFamily="HeliosCond" Text="Продано предприятий: 1" FontSize="20"></Label>
+<Label TextColor="#373132" FontFamily="HeliosCond" Text="Дней в игре: 10" FontSize="20"></Label>
+<Label TextColor="#373132" FontFamily="HeliosCond" Text="" FontSize="20"></Label>
+</StackLayout>
+</Frame>
+</StackLayout>
 </ContentPage>
-

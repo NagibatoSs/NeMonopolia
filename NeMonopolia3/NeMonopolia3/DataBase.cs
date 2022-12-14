@@ -13,11 +13,11 @@ namespace NeMonopolia3
         private readonly SQLiteConnection database;
         public DataBase(string dbPath)
         {
-            database = new SQLiteConnection(dbPath);
-            
-            database.CreateTable<PlayerInfo>();
-            database.CreateTable<PlayerCharacteristic>();
-            database.CreateTable<Factory>();
+            //database = new SQLiteConnection(dbPath);
+
+            //database.CreateTable<PlayerInfo>();
+            //database.CreateTable<PlayerCharacteristic>();
+            //database.CreateTable<Factory>();
         }
         //public void UpdateChildern(PlayerCharacteristic playerCharacteristic)
         //{

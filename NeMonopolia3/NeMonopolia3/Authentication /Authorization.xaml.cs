@@ -20,7 +20,15 @@ namespace NeMonopolia3
 
         private async void  Button_Clicked_1(System.Object sender, System.EventArgs e)
         {
+
+            var person = new PlayerInfo() { Login = login.Text, Password = password.Text };
+            DBContext.IsAuthorizedPerson(person);
+            if (CurrentPlayerData.isAuthorized)
             await Navigation.PushAsync(new Registration());
+            else
+            {
+               await DisplayAlert("Something wrong","NO accaound","Try again");
+            }
         }
     }
 }

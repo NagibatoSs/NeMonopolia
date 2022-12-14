@@ -39,41 +39,41 @@ namespace NeMonopolia3
 				new Factory {
 					Name ="KFC",
 					Price=50000,
-					rent =10000,
+					Rent =10000,
 					Image= "KFC.jpg",
-					security= 20,
+					Security= 20,
 					OwnerId=0,
-                    changerIntellect =10,
-                    changerHonesty=0,
-                    changerCommunication =5,
-                    changerLuck =15
+                    ChangerIntellect =10,
+                    ChangerHonesty=0,
+                    ChangerCommunication =5,
+                    ChangerLuck =15
 
                 },
 				new Factory
 				{
 					Name ="ДАТАБАНК",
 					Price=900000,
-					rent =20000,
+					Rent =20000,
 					Image= "Bank.jpg",
-					security= 70,
+					Security= 70,
 					OwnerId=0,
-                    changerIntellect =0,
-                    changerHonesty=10,
-                    changerCommunication =15,
-                    changerLuck =2
+                    ChangerIntellect =0,
+                    ChangerHonesty=10,
+                    ChangerCommunication =15,
+                    ChangerLuck =2
                 },
 				new Factory
 				{
 					Name ="Аксион",
 					Price=750000,
-					rent =50000,
+					Rent =50000,
 					Image= "Aksion.jpg",
-					security= 65,
+					Security= 65,
 					OwnerId=0,
-                    changerIntellect =1,
-                    changerHonesty=0,
-                    changerCommunication =10,
-                    changerLuck =4
+                    ChangerIntellect =1,
+                    ChangerHonesty=0,
+                    ChangerCommunication =10,
+                    ChangerLuck =4
                 },
 
 			});

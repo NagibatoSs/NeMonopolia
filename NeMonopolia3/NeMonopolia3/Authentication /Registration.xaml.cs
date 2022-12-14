@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using System.Threading;
 using Xamarin.Forms;
 
 namespace NeMonopolia3
@@ -21,7 +21,13 @@ namespace NeMonopolia3
 
         private async void Button_Clicked_1(System.Object sender, System.EventArgs e)
         {
+            
+            PlayerInfo player = new PlayerInfo() {Id =10, Name=name.Text, Login = login.Text, Password=password.Text };
+            CurrentPlayerData.CurPlayerInfo = player;
+            DBContext.SetPlayers(player);
+           // DBContext.GetPlayerName(2);
             await Navigation.PushAsync(new PlayerProfile());
+            
         }
     }
 }

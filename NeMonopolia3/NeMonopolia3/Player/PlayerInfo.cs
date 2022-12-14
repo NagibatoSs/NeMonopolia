@@ -14,8 +14,10 @@ namespace NeMonopolia3
         public string Name { get; set; }
         public string Login { get; set; }
         public string Password { get; set; }
+        public int? CurrenTeamId { get; set; }
+        public virtual Team CurrentTeam { get; set; }
        // public List<int> SessionsId { get; set; }
-      //  public List<PlayerCharacteristic> Sessions { get; set; }
+        public List<PlayerCharacteristic> Sessions { get; set; }
     }
 }
 

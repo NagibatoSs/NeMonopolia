@@ -1,32 +1,32 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <ContentPage
-    xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    x:Class="NeMonopolia3.PlayerParametr">
+xmlns="http://xamarin.com/schemas/2014/forms"
+xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+x:Class="NeMonopolia3.PlayerParametr"
+BackgroundImage="background.png">
 <StackLayout>
-    <!--<StackLayout BackgroundColor="LightSlateGray" Padding="10" Margin="20" >
-        <Label Text="Player name" FontSize="Large"/>
-        <Label Text="Teams name" FontSize="Medium"/>
-        <Label Text="How many stops left" FontSize="Medium"/>
-    </StackLayout>-->
+<!--<StackLayout BackgroundColor="LightSlateGray" Padding="10" Margin="20" >
+<Label Text="Player name" FontSize="Large"/>
+<Label Text="Teams name" FontSize="Medium"/>
+<Label Text="How many stops left" FontSize="Medium"/>
+</StackLayout>-->
 <Frame Padding="10" Margin="20" CornerRadius="20">
 <StackLayout BackgroundColor="White" >
-<Label Text="Player name" x:Name="playerName" FontSize="Large"/>
-<Label Text="Teams name" x:Name="TeamName" FontSize="Medium"/>
-<Label Text="How many stops left" x:Name="StopsLeft" FontSize="Medium"/>
+<Label TextColor="#373132" FontFamily="HeliosCond" Text="Игрок" x:Name="playerName" FontSize="Large"/>
+<Label TextColor="#8C8C8C" FontFamily="HeliosCond" Text="Название команды" x:Name="TeamName" FontSize="Medium"/>
+<Label TextColor="#F7941E" FontFamily="HeliosCond" Text="Остановок до бонуса: 0" x:Name="StopsLeft" FontSize="Medium"/>
 </StackLayout>
 </Frame>
-    <Label Text="Характеристики" FontSize="Large" HorizontalTextAlignment="Center" TextColor="Black"/>
-    <Frame x:Name="characteristicsFrame" Margin="20" CornerRadius="10" BackgroundColor="LightGray">
+<Label Text="Характеристики" FontAttributes="Bold" FontFamily="HeliosCond" FontSize="25" HorizontalTextAlignment="Start" TextColor="#373132"
+Margin="30, 20, 0, 0"/>
+<Frame x:Name="characteristicsFrame" Margin="20, 10, 20, 0" Padding="15, 15" CornerRadius="10" BackgroundColor="White">
 <StackLayout x:Name="charactStack">
-<Label x:Name="l1" FontSize="20"></Label>
-<Label x:Name="l2" FontSize="20"></Label>
-<Label x:Name="l3" FontSize="20"></Label>
-<Label x:Name="l4" FontSize="20"></Label>
-<Label x:Name="l5" FontSize="20"></Label>
+<Label TextColor="#373132" FontFamily="HeliosCond" x:Name="l1" FontSize="20"></Label>
+<Label TextColor="#373132" FontFamily="HeliosCond" x:Name="l2" FontSize="20"></Label>
+<Label TextColor="#373132" FontFamily="HeliosCond" x:Name="l3" FontSize="20"></Label>
+<Label TextColor="#373132" FontFamily="HeliosCond" x:Name="l4" FontSize="20"></Label>
+<Label TextColor="#373132" FontFamily="HeliosCond" x:Name="l5" FontSize="20"></Label>
 </StackLayout>
 </Frame>
-
 </StackLayout>
 </ContentPage>
-

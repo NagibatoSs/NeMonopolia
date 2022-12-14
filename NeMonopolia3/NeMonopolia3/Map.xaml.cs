@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Net;
+using System.Threading;
 using Newtonsoft.Json;
 using Xamarin.Essentials;
 using Xamarin.Forms;
@@ -41,17 +42,21 @@ namespace NeMonopolia3
             // locationTs.Longitude = result.data.longitude;
             // locationTs.Latitude = result.data.latitude;
 
-            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(
-                "https://testapi.igis-transport.ru/game-wMdF23UUDp0iasAK/ts/18-001-1-0005705");
-            HttpWebResponse response = (HttpWebResponse)request.GetResponse();
-            Stream stream = response.GetResponseStream();
-            StreamReader sr = new StreamReader(stream);
+          // -// pricename.Text = App.DataBase.GetPlayers()[0].Money.ToString();
 
-            string sReadData = sr.ReadToEnd();
-            response.Close();
+            //HttpWebRequest request = (HttpWebRequest)WebRequest.Create(
+            //    "https://testapi.igis-transport.ru/game-wMdF23UUDp0iasAK/ts/18-001-1-0005705");
+            //HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+            //Stream stream = response.GetResponseStream();
+            //StreamReader sr = new StreamReader(stream);
+
+            //string sReadData = sr.ReadToEnd();
+            //response.Close();
 
             ////dynamic result = JsonConvert.DeserializeObject<ServerClass>(sReadData);
             //ServerClass result = JsonConvert.DeserializeObject<ServerClass>(sReadData);
+
+          //-  //var result = APIclass.GetAPI(Code);
             //locationTs = new Location();
             //locationTs.Longitude = result.data.longitude;
             //locationTs.Latitude = result.data.latitude;
@@ -59,10 +64,12 @@ namespace NeMonopolia3
         }
         public bool Comparing()
         {
+           
+            Thread.Sleep(60000);
             var geo = new LocationService();
             geo.GetPlayerLocation();
             var stop = geo.GetStop();
-            locationTs = new Location { Latitude = 46.765, Longitude = -45.645 };
+            //locationTs = new Location { Latitude = 46.765, Longitude = -45.645 };
             
             if (geo.IsOnStop(geo, stop) && geo.CompareToTs(geo, new LocationService() { Lat = locationTs.Latitude, Lng = locationTs.Longitude }))
             {
@@ -78,6 +85,7 @@ namespace NeMonopolia3
         }
         async void Button_Clicked(System.Object sender, System.EventArgs e)
         {
+           await DisplayAlert("Внимание", "Пожалуйста подождите 1 минуту", "OK");
             if (Comparing())
             {
                 await Navigation.PushAsync(new ActionView());

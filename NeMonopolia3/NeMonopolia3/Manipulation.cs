@@ -34,7 +34,7 @@ namespace NeMonopolia3
 
         public static void PayRent(PlayerCharacteristic visitor, Factory factory)
         {
-            if (visitor.Money < factory.rent)
+            if (visitor.Money < factory.Rent)
             {
                 Loosing(visitor);
                 return; //BANCROT MAFFAKA
@@ -42,7 +42,7 @@ namespace NeMonopolia3
             visitor.Money = visitor.Money - factory.Price;
             int id = factory.OwnerId;
             var owner = App.DataBase.GetPlayerCharacById(id);
-            owner.Money += factory.rent;
+            owner.Money += factory.Rent;
         }
 
         public static void Loosing(PlayerCharacteristic player)
@@ -65,15 +65,15 @@ namespace NeMonopolia3
         public static PlayerCharacteristic ChangeCharacteristics(PlayerCharacteristic player, Factory factory)
         {
             //создать класс характеристик в виде справочника
-            player.Honesty += factory.changerHonesty;
-            player.Intellect += factory.changerIntellect;
-            player.Communication += factory.changerCommunication;
-            player.Luck += factory.changerLuck;
+            player.Honesty += factory.ChangerHonesty;
+            player.Intellect += factory.ChangerIntellect;
+            player.Communication += factory.ChangerCommunication;
+            player.Luck += factory.ChangerLuck;
             return player;
         }
         public static void CheckBonus(PlayerCharacteristic player)
         {
-            if (player.StopCount == 5)
+            if (player.StopCount%5 == 0)
             {
                 player.Money += BonusSum;
                 player.StopCount = 0;

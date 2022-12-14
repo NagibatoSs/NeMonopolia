@@ -1,50 +1,98 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <ContentPage
-    xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    x:Class="NeMonopolia3.Bag">
-   <StackLayout>
- 
-       <CollectionView x:Name="myCollectionView"
-                       SelectionMode="Single"
-                       >
-           <CollectionView.ItemTemplate>
-               <DataTemplate>
-                   <Grid Padding="10">
-                       <Grid.RowDefinitions>
-                           <RowDefinition Height="Auto"/>
-                           <RowDefinition Height="Auto"/>
-                           <RowDefinition Height="Auto"/>
-                           <RowDefinition Height="Auto"/>
-                       </Grid.RowDefinitions>
-                       <Grid.ColumnDefinitions>
-                           <ColumnDefinition Width="Auto"/>
-                           <ColumnDefinition Width="Auto"/>
-                       </Grid.ColumnDefinitions>
-                       <!--<Image Grid.RowSpan="2"
-                              Source="{Binding Image}"
-                              Aspect="AspectFill"
-                              HeightRequest="50"
-                              WidthRequest="50"/>-->
-                       <Label Text="{Binding Name}"
-                              Grid.Column="0"
-                              FontAttributes="Bold"/>
-                       <Label Text="{Binding Price}"
-                              Grid.Column="1" Grid.Row="1"
-                              FontAttributes="Italic"
-                              VerticalOptions="End"/>
-                       <Label Text="{Binding Rent}"
-                              Grid.Column="1" Grid.Row="2"
-                              FontAttributes="Italic"
-                              VerticalOptions="End"/>
+xmlns="http://xamarin.com/schemas/2014/forms"
+xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+x:Class="NeMonopolia3.Bag"
+BackgroundImage="background.png">
+<StackLayout>
+<CollectionView x:Name="myCollectionView"
+SelectionMode="Single"
+>
+<CollectionView.ItemTemplate>
+<DataTemplate>
+<Frame BorderColor="#5C5C5C" Padding="10" BackgroundColor="White" CornerRadius="10">
+<Grid Padding="10" RowSpacing="5">
+<Grid.RowDefinitions>
+<RowDefinition Height="Auto"/>
+<RowDefinition Height="Auto"/>
+<RowDefinition Height="Auto"/>
+<RowDefinition Height="Auto"/>
+</Grid.RowDefinitions>
+<Grid.ColumnDefinitions>
+<ColumnDefinition Width="Auto"/>
+<ColumnDefinition Width="Auto"/>
+</Grid.ColumnDefinitions>
+<Image Grid.Column="3"
+Grid.RowSpan="5"
+Source="{Binding Image}"
+Aspect="AspectFill"
+HeightRequest="50"
+WidthRequest="50"
+/>
+<Label FontSize="20"
+TextColor="#373132"
+Text="{Binding Name}"
+Grid.Column="0"
+Grid.Row="0"
+FontAttributes="Bold"/>
+<Label FontSize="16"
+TextColor="#373132"
+Text="Цена:"
+Grid.Column="0"
+Grid.Row="1"
+FontAttributes="Bold"
+/>
+<Label FontSize="16"
+TextColor="#373132"
+Text="{Binding Price}"
+Grid.Column="1"
+Grid.Row="1"
+FontAttributes="Bold"/>
+<Image Grid.Row="1" Grid.Column="2" Source="profits.png"
+Aspect="AspectFit"
+HorizontalOptions="Start"
+HeightRequest="20"
+WidthRequest="20"
+Margin="0, 0, 0, 0"/>
+<Label FontSize="16" TextColor="#373132" Text="Рента:"
+Grid.Column="0"
+Grid.Row="2"
+FontAttributes="Bold"/>
+<Label FontSize="16" TextColor="#373132" Text="{Binding rent}"
+Grid.Column="1"
+Grid.Row="2"
+FontAttributes="Bold"/>
+<Image Grid.Row="2" Grid.Column="2" Source="profits.png"
+Aspect="AspectFit"
+HorizontalOptions="Start"
+HeightRequest="20"
+WidthRequest="20"
+Margin="0, 0, 0, 0"/>
+<Image Grid.Row="1" Grid.Column="2" Source="profits.png"
+Aspect="AspectFit"
+HorizontalOptions="Start"
+HeightRequest="20"
+WidthRequest="20"
+Margin="0, 0, 0, 0"/>
+<Label FontSize="16" TextColor="#373132" Text="{Binding security}"
+Grid.Column="1"
+Grid.Row="3"
+FontAttributes="Bold"/>
+<Label FontSize="16" TextColor="#373132" Text="Охрана:"
+Grid.Column="0"
+Grid.Row="3"
+FontAttributes="Bold"/>
+<Label FontSize="16" TextColor="#373132" Text="%"
+Grid.Column="1"
+Margin="23,0,0,0"
+Grid.Row="3"
+FontAttributes="Bold"/>
+</Grid>
+</Frame>
+</DataTemplate>
 
-                   </Grid>
+</CollectionView.ItemTemplate>
 
-               </DataTemplate>
-
-           </CollectionView.ItemTemplate>
-
-       </CollectionView>
-   </StackLayout>
+</CollectionView>
+</StackLayout>
 </ContentPage>
-
