@@ -1,29 +1,33 @@
 ﻿<Properties StartupConfiguration="{A75A8B8A-FE09-4884-BFBF-51033FB2653D}|Default">
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.Pixel_3a_API_30" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.MonoDroid LastDeploySdkVersion="13.1.0.1" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <Debugger.DebugSourceFolders>
     <String>/Users/ilyas/Library/Caches/VisualStudio/17.0/Symbols/raw.githubusercontent.com/mono/mono/dffa5ab92245f2419238a35b7c2052e9a24036b4</String>
   </Debugger.DebugSourceFolders>
-  <MonoDevelop.Ide.ItemProperties.NeMonopolia3.Android AndroidDesignerPreferredTheme="MainTheme" PreferredExecutionTarget="Android.Pixel_3a_API_30" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="NeMonopolia3/NeMonopolia3/Map.xaml.cs">
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="13.1.0.1" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/ilyas/Projects/NeMonopolia/NeMonopolia3/NeMonopolia3/UploadView.xaml.cs" relfile="NeMonopolia3/NeMonopolia3/UploadView.xaml.cs" line="21" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="NeMonopolia3/NeMonopolia3/Authentication /Registration.xaml.cs">
     <Files>
       <File FileName="NeMonopolia3/NeMonopolia3/App.xaml.cs" Line="35" Column="59" />
-      <File FileName="NeMonopolia3/NeMonopolia3/DBContext.cs" Line="258" Column="1" />
-      <File FileName="NeMonopolia3/NeMonopolia3/CurrentPlayerData.cs" Line="7" Column="33" />
-      <File FileName="NeMonopolia3/NeMonopolia3/Authentication /Registration.xaml.cs" Line="30" Column="96" />
-      <File FileName="NeMonopolia3/NeMonopolia3/Player.cs" Line="6" Column="18" />
+      <File FileName="NeMonopolia3/NeMonopolia3/DBContext.cs" Line="75" Column="97" />
+      <File FileName="NeMonopolia3/NeMonopolia3/CurrentPlayerData.cs" Line="9" Column="43" />
+      <File FileName="NeMonopolia3/NeMonopolia3/Authentication /Registration.xaml.cs" Line="29" Column="14" />
+      <File FileName="NeMonopolia3/NeMonopolia3/Player.cs" Line="21" Column="28" />
       <File FileName="NeMonopolia3/NeMonopolia3/Pers.cs" Line="19" Column="9" />
       <File FileName="NeMonopolia3/NeMonopolia3/Game.cs" />
-      <File FileName="NeMonopolia3/NeMonopolia3/Factory.cs" Line="31" Column="2" />
-      <File FileName="NeMonopolia3/NeMonopolia3/Stop.cs" Line="14" Column="13" />
-      <File FileName="NeMonopolia3/NeMonopolia3/Rate.cs" Line="17" Column="13" />
-      <File FileName="NeMonopolia3/NeMonopolia3/Hold.cs" Line="1" Column="1" />
-      <File FileName="NeMonopolia3/NeMonopolia3/LocationService.cs" Line="1" Column="1" />
+      <File FileName="NeMonopolia3/NeMonopolia3/Factory.cs" />
+      <File FileName="NeMonopolia3/NeMonopolia3/Stop.cs" Line="13" Column="49" />
+      <File FileName="NeMonopolia3/NeMonopolia3/Rate.cs" />
+      <File FileName="NeMonopolia3/NeMonopolia3/Hold.cs" Line="6" Column="9" />
+      <File FileName="NeMonopolia3/NeMonopolia3/LocationService.cs" Line="15" Column="105" />
       <File FileName="../../Library/Caches/VisualStudio/17.0/Symbols/raw.githubusercontent.com/mono/mono/dffa5ab92245f2419238a35b7c2052e9a24036b4/mcs/class/referencesource/mscorlib/system/runtime/exceptionservices/exceptionservicescommon.cs" Line="157" Column="1" />
       <File FileName="NeMonopolia3/NeMonopolia3/LocationType.cs" Line="4" Column="16" />
-      <File FileName="NeMonopolia3/NeMonopolia3/Map.xaml.cs" Line="1" Column="1" />
+      <File FileName="NeMonopolia3/NeMonopolia3/Map.xaml.cs" Line="107" Column="69" />
+      <File FileName="NeMonopolia3/NeMonopolia3/ActionView.xaml.cs" Line="44" Column="15" />
+      <File FileName="NeMonopolia3/NeMonopolia3/Manipulation.cs" Line="41" Column="1" />
+      <File FileName="NeMonopolia3/NeMonopolia3/Authentication /Authorization.xaml.cs" Line="23" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -42,9 +46,7 @@
               </Node>
               <Node name="ActionView.xaml" expanded="True" />
               <Node name="App.xaml" expanded="True" />
-              <Node name="Map.xaml" expanded="True">
-                <Node name="Map.xaml.cs" selected="True" />
-              </Node>
+              <Node name="Map.xaml" expanded="True" />
               <Node name="Scanner.xaml" expanded="True" />
               <Node name="TabPage.xaml" expanded="True" />
               <Node name="UploadView.xaml" expanded="True" />
@@ -60,11 +62,9 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.NeMonopolia3.Android PreferredExecutionTarget="Android.Pixel_3a_API_30" AndroidDesignerPreferredTheme="MainTheme" />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/ilyas/Projects/NeMonopolia/NeMonopolia3/NeMonopolia3/UploadView.xaml.cs" relfile="NeMonopolia3/NeMonopolia3/UploadView.xaml.cs" line="21" column="1" />
-      <Breakpoint file="/Users/ilyas/Projects/NeMonopolia/NeMonopolia3/NeMonopolia3/DBContext.cs" relfile="NeMonopolia3/NeMonopolia3/DBContext.cs" line="258" column="1" />
-    </BreakpointStore>
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.Pixel_3a_API_30" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
