@@ -31,8 +31,8 @@ namespace NeMonopolia3
         public App()
         {
             InitializeComponent();           
-            MainPage = new PlayerParametr();
-           // MainPage = new NavigationPage(new TabPage());
+           // MainPage = new Registration();
+            MainPage = new NavigationPage(new Registration());
         }
         
         protected override void OnStart()

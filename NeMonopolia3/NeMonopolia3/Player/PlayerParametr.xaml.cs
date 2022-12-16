@@ -13,9 +13,9 @@ namespace NeMonopolia3
         }
         protected override void OnAppearing()
         {
-            DBContext.GetPlayerName(2);
+           // DBContext.GetPlayerName(2);
             
-            playerName.Text = CurrentPlayerData.CurPlayerInfo.Name;
+           // playerName.Text = CurrentPlayerData.CurPlayer.Name;
             //StopsLeft.Text = "Остановок до бонуса: " + (5 - App.DataBase.GetPlayers()[0].StopCount).ToString();
             //l1.Text = "Деньги: " + App.DataBase.GetPlayers()[0].Money;
             //l2.Text = "Интеллект: " + App.DataBase.GetPlayers()[0].Intellect;

@@ -26,7 +26,7 @@ namespace NeMonopolia3
 					Luck=20,
 					IsPlaying=true,
 					StopCount=3,
-					Portfolio = new List<Factory>()
+					Portfolio = new List<FactoryInf>()
 				 }
 
 			});
@@ -34,9 +34,9 @@ namespace NeMonopolia3
 		}
 		public static void FactoryAdd()
 		{
-			App.DataBase.SaveChildrens(new List<Factory>
+			App.DataBase.SaveChildrens(new List<FactoryInf>
 			{
-				new Factory {
+				new FactoryInf {
 					Name ="KFC",
 					Price=50000,
 					Rent =10000,
@@ -49,7 +49,7 @@ namespace NeMonopolia3
                     ChangerLuck =15
 
                 },
-				new Factory
+				new FactoryInf
 				{
 					Name ="ДАТАБАНК",
 					Price=900000,
@@ -62,7 +62,7 @@ namespace NeMonopolia3
                     ChangerCommunication =15,
                     ChangerLuck =2
                 },
-				new Factory
+				new FactoryInf
 				{
 					Name ="Аксион",
 					Price=750000,

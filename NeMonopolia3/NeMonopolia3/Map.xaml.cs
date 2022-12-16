@@ -62,38 +62,58 @@ namespace NeMonopolia3
             //locationTs.Latitude = result.data.latitude;
 
         }
-        public bool Comparing()
-        {
+        //public bool Comparing()
+        //{
            
-            Thread.Sleep(60000);
-            var geo = new LocationService();
-            geo.GetPlayerLocation();
-            var stop = geo.GetStop();
-            //locationTs = new Location { Latitude = 46.765, Longitude = -45.645 };
+        //    Thread.Sleep(60000);
+        //    var geo = new LocationService();
+        //    geo.GetPlayerLocation();
+        //    var stop = geo.GetStop();
+        //    //locationTs = new Location { Latitude = 46.765, Longitude = -45.645 };
             
-            if (geo.IsOnStop(geo, stop) && geo.CompareToTs(geo, new LocationService() { Lat = locationTs.Latitude, Lng = locationTs.Longitude }))
-            {
-                return true;
-            }
-            else
-            {
+        //    if (geo.IsOnStop(geo, stop) && geo.CompareToTs(geo, new LocationService() { Lat = locationTs.Latitude, Lng = locationTs.Longitude }))
+        //    {
+        //        return true;
+        //    }
+        //    else
+        //    {
 
-                return false;
-            }
+        //        return false;
+        //    }
 
-            ////сделать экран с надписью "Подождите" через пол минуты еще раз сравниить гео и перейти на другую 
-        }
+        //    ////сделать экран с надписью "Подождите" через пол минуты еще раз сравниить гео и перейти на другую 
+        //}
         async void Button_Clicked(System.Object sender, System.EventArgs e)
         {
            await DisplayAlert("Внимание", "Пожалуйста подождите 1 минуту", "OK");
-            if (Comparing())
+            var stop = new Stop();
+            var result = await Geolocation.GetLocationAsync(new GeolocationRequest(GeolocationAccuracy.Default));
+            var geo = new LocationType() {Latitude=result.Latitude, Longitude=result.Longitude };
+            DBContext.GetStop(geo,stop);
+            if (stop.TItle == null)
             {
-                await Navigation.PushAsync(new ActionView());
+                DisplayAlert("Attention", "Вы не на остановке", "OK");
+                return;
             }
             else
             {
-                DisplayAlert("Attention", "Вы не на остановке", "OK");
+                Thread.Sleep(30000);
+                result = await Geolocation.GetLocationAsync(new GeolocationRequest(GeolocationAccuracy.Default));
+                geo = new LocationType() { Latitude = result.Latitude, Longitude = result.Longitude };
+                DBContext.GetStop(geo,stop);
+                if (stop.TItle == null)
+                    DisplayAlert("Attention", "Вы не на остановке", "OK");
+                else
+                    await Navigation.PushAsync(new ActionView(stop));
             }
+            //if (Comparing())
+            //{
+            //    await Navigation.PushAsync(new ActionView());
+            //}
+            //else
+            //{
+            //    DisplayAlert("Attention", "Вы не на остановке", "OK");
+            //}
             //Testing();
             //HttpWebRequest request = (HttpWebRequest)WebRequest.Create(
             //    "https://testapi.igis-transport.ru/game-wMdF23UUDp0iasAK/ts/18-002-3-0000526");

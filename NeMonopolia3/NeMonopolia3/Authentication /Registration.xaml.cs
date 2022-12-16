@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Threading;
 using Xamarin.Forms;
+using Xamarin.Essentials;
 
 namespace NeMonopolia3
 {
@@ -22,10 +23,13 @@ namespace NeMonopolia3
         private async void Button_Clicked_1(System.Object sender, System.EventArgs e)
         {
             
-            PlayerInfo player = new PlayerInfo() {Id =10, Name=name.Text, Login = login.Text, Password=password.Text };
-            CurrentPlayerData.CurPlayerInfo = player;
-            DBContext.SetPlayers(player);
-           // DBContext.GetPlayerName(2);
+            Player player = new Player() { idPlayer = 2, UserName = "first", Login = "firstLog", Password = "PasFirst", Phone = "11", isBanned = false, Persons = new List<Pers>() { new Pers() } };
+            CurrentPlayerData.CurPlayer = player;
+            //DBContext.SetPlayers(player);
+           // DBContext.SetPlayersByParams(player);
+            // DBContext.GetPlayer(2);
+            // LocationType location = new LocationType() { Latitude = 56.702538, Longitude = 53.264639 };
+            // DBContext.GetStop(location);
             await Navigation.PushAsync(new PlayerProfile());
             
         }

@@ -34,9 +34,9 @@ namespace NeMonopolia3
             return database.GetAllWithChildren<PlayerCharacteristic>();
         }
 
-        public List<Factory> GetFactories()
+        public List<FactoryInf> GetFactories()
         {
-            return database.GetAllWithChildren<Factory>();
+            return database.GetAllWithChildren<FactoryInf>();
         }
 
         public List<PlayerInfo> GetPlayerInfo()
@@ -64,9 +64,9 @@ namespace NeMonopolia3
             return database.GetAllWithChildren<PlayerCharacteristic>().Where(i => i.Id == id).FirstOrDefault();
             //return database.Table<PlayerCharacteristic>().Where(i => i.Id == id).FirstOrDefault();
         }
-        public Factory GetFactoryById(int id)
+        public FactoryInf GetFactoryById(int id)
         {
-            return database.GetAllWithChildren<Factory>().Where(i => i.Id == id).FirstOrDefault();
+            return database.GetAllWithChildren<FactoryInf>().Where(i => i.Id == id).FirstOrDefault();
         }
         public PlayerInfo GetPlayerInfoById(int id)
         {

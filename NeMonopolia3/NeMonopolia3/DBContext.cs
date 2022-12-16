@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 using System.Net;
 using System.IO;
+using Xamarin.Essentials;
+using System.Collections.Specialized;
 
 namespace NeMonopolia3
 {
@@ -17,14 +19,63 @@ namespace NeMonopolia3
 		public DBContext()
 		{
 		}
-        public static async void SetPlayers(PlayerInfo player)
+        
+        public static async void SetPlayers(Player player)
         {
-            
-            string JSONData = await Task.Factory.StartNew(() => JsonConvert.SerializeObject(player));
-            WebRequest request = WebRequest.Create("http://nemonopolia.somee.com/Home/PlayerInfoEdit");
+            //try
+            //{
+                string JSONData = await Task.Factory.StartNew(() => JsonConvert.SerializeObject(player));
+                //System.Net.ServicePointManager.Expect100Continue = false;
+                //  System.Net.ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls12;
+                WebRequest request = WebRequest.Create("http://nemonopolia.somee.com/Home/SavePlayer");
+                request.Method = "POST";
+                string query = $"player={JSONData}";
+                byte[] byteMsg = Encoding.UTF8.GetBytes(query);
+                request.ContentType = "application/x-www-form-urlencoded";
+                request.ContentLength = byteMsg.Length;
+
+                using (Stream stream = await request.GetRequestStreamAsync())
+                {
+                    await stream.WriteAsync(byteMsg, 0, byteMsg.Length);
+                }
+
+                WebResponse response = await request.GetResponseAsync();
+                string answer = null;
+                using (Stream s = response.GetResponseStream())
+                {
+                    using (StreamReader sR = new StreamReader(s))
+                    {
+                        answer = await sR.ReadToEndAsync();
+                    }
+                }
+                response.Close();
+            //}
+            //catch(Exception e)
+            //{
+            //    var error = e.ToString();
+            //}
+        }
+
+        public static async void SetPlayersByParams(Player player)
+        {
+            //try
+            //{
+            string JSONName = await Task.Factory.StartNew(() => JsonConvert.SerializeObject(player.UserName));
+            string JSONLogin = await Task.Factory.StartNew(() => JsonConvert.SerializeObject(player.Login));
+            string JSONPassword = await Task.Factory.StartNew(() => JsonConvert.SerializeObject(player.Password));
+            NameValueCollection queryString = System.Web.HttpUtility.ParseQueryString(string.Empty);
+
+            queryString.Add("name", $"{JSONName}");
+            queryString.Add("login", $"{JSONLogin}");
+            queryString.Add("password", $"{JSONPassword}");
+
+
+            //System.Net.ServicePointManager.Expect100Continue = false;
+            //  System.Net.ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls12;
+            WebRequest request = WebRequest.Create("http://nemonopolia.somee.com/Home/SavePlayerByParams");
             request.Method = "POST";
-            string query = $"playerInfo={JSONData}";
-            byte[] byteMsg = Encoding.UTF8.GetBytes(query);
+            //string query = $"player={JSONData}";
+            byte[] byteMsg = Encoding.UTF8.GetBytes(queryString.ToString());
             request.ContentType = "application/x-www-form-urlencoded";
             request.ContentLength = byteMsg.Length;
 
@@ -43,7 +94,14 @@ namespace NeMonopolia3
                 }
             }
             response.Close();
+            //}
+            //catch(Exception e)
+            //{
+            //    var error = e.ToString();
+            //}
         }
+
+
         public static async void SetPlayer(PlayerInfo player)
         {
             string JSONData = await Task.Factory.StartNew(() => JsonConvert.SerializeObject(player));
@@ -133,7 +191,7 @@ namespace NeMonopolia3
         public static async void GetPlayerName(int id)
 		{
             string JSONData = await Task.Factory.StartNew(() => JsonConvert.SerializeObject(id));
-            WebRequest request = WebRequest.Create("http://nemonopolia.somee.com/Home/GetPlayerInfo");
+            WebRequest request = WebRequest.Create("http://nemonopolia.somee.com/Home/GetPlayerNameById");
             request.Method = "POST";
             string query = $"id={JSONData}";
             byte[] byteMsg = Encoding.UTF8.GetBytes(query);
@@ -184,9 +242,70 @@ namespace NeMonopolia3
             //string  helloStr = JsonConvert.DeserializeObject<string>(answer);
             //// MessageBox.Show(helloStr);
             
-            CurrentPlayerData.CurPlayerInfo.Name = helloStr;
+            CurrentPlayerData.CurPlayer.UserName = helloStr;
+        }
+        public static async void GetPlayer(int id)
+        {
+            string JSONData = await Task.Factory.StartNew(() => JsonConvert.SerializeObject(id));
+            WebRequest request = WebRequest.Create("http://nemonopolia.somee.com/Home/GetPlayerById1");
+            request.Method = "POST";
+            string query = $"id={JSONData}";
+            byte[] byteMsg = Encoding.UTF8.GetBytes(query);
+            request.ContentType = "application/x-www-form-urlencoded";
+            request.ContentLength = byteMsg.Length;
+
+            using (Stream stream = await request.GetRequestStreamAsync())
+            {
+                await stream.WriteAsync(byteMsg, 0, byteMsg.Length);
+            }
+
+            WebResponse response = await request.GetResponseAsync();
+            string answer = null;
+            using (Stream s = response.GetResponseStream())
+            {
+                using (StreamReader sR = new StreamReader(s))
+                {
+                    answer = await sR.ReadToEndAsync();
+                }
+            }
+            response.Close();
+
+            Player helloStr = JsonConvert.DeserializeObject<Player>(answer);
+            
+            CurrentPlayerData.CurPlayer = helloStr;
         }
 
+        public static async void GetStop(LocationType location, Stop stop)
+        {
+            //Location location = new() { Latitude = latitude, Longitude = longtitude }; 
+            string JSONData = await Task.Factory.StartNew(() => JsonConvert.SerializeObject(location));
+            var a = 0;
+            WebRequest request = WebRequest.Create("http://nemonopolia.somee.com/Home/GetStopByLocationOfPlayer");
+            request.Method = "POST";
+            string query = $"location={JSONData}";
+            byte[] byteMsg = Encoding.UTF8.GetBytes(query);
+            request.ContentType = "application/x-www-form-urlencoded";
+            request.ContentLength = byteMsg.Length;
+
+            using (Stream stream = await request.GetRequestStreamAsync())
+            {
+                await stream.WriteAsync(byteMsg, 0, byteMsg.Length);
+            }
+
+            WebResponse response = await request.GetResponseAsync();
+            string answer = null;
+            using (Stream s = response.GetResponseStream())
+            {
+                using (StreamReader sR = new StreamReader(s))
+                {
+                    answer = await sR.ReadToEndAsync();
+                }
+            }
+            response.Close();
+
+            stop = JsonConvert.DeserializeObject<Stop>(answer);
+            CurrentPlayerData.CurStop = stop;
+        }
         public static async void IsAuthorizedPerson(PlayerInfo player)
         {
             string JSONData = await Task.Factory.StartNew(() => JsonConvert.SerializeObject(player));

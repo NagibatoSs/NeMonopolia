@@ -8,32 +8,40 @@ namespace NeMonopolia3
 {
     public partial class ActionView : ContentPage
     {
-        Factory Factory = new Factory();
-        PlayerCharacteristic Player = new PlayerCharacteristic();
+        FactoryInf Factory = new FactoryInf();
+        Pers Player = new Pers();
+        Stop stop = new Stop();
+        Factory factory = new Factory();
         public ActionView()
         {
             InitializeComponent();
         }
-
+        public ActionView(Stop stop)
+        {
+            this.stop = stop;
+            factory = this.stop.factory[0];
+        }
         protected override void OnAppearing()
         {
-            var aa = App.DataBase.GetPlayers();
+            //var aa = App.DataBase.GetPlayers();
             
-            Player = aa[0];
-            //получаем здесь экземпляр фактори
-            // Factory = new Factory();
-            Factory = FillTheFacroty(Factory);
-            pBalance.Text += Player.Money;
-            fName.Text = Factory.Name;
-            fPrice.Text = "Цена: " + Factory.Price.ToString();
-            fRent.Text = "Базовая рента: " + Factory.Rent.ToString();
-            fSecurity.Text = "Охраняемость: " + Factory.Security.ToString() + "%";
+            //Player = aa[0];
+            ////получаем здесь экземпляр фактори
+            //// Factory = new Factory();
+            //Factory = FillTheFacroty(Factory);
+
+            pBalance.Text += factory.Holds[0].Pers.Money;
+            fName.Text = stop.TItle;
+            fPrice.Text = "Цена: " + factory.BasePrice.ToString();
+            fRent.Text = "Базовая рента: " + factory.Rates[0].Rent.ToString();
+            fSecurity.Text = "Охраняемость: " + factory.Rates[0].Security.ToString() + "%";
         }
 
         public async void Button_Clicked(System.Object sender, System.EventArgs e)
         {
-            Player = App.DataBase.GetPlayers()[0];
-            Manipulation.BuyFactory(Player, Factory);
+            // Player = App.DataBase.GetPlayers()[0];
+
+            // Manipulation.BuyFactory(factory.Holds[0], Factory);
             await DisplayAlert("Успешная покупка", "Вы купили предприятие " + Factory.Name + "!", "ОК");
             await Navigation.PopAsync();
 
@@ -41,8 +49,8 @@ namespace NeMonopolia3
 
        public async  void Button_Clicked_1(System.Object sender, System.EventArgs e)
        {
-            Player = App.DataBase.GetPlayers()[0];
-            Manipulation.SellingToBank(Player, Factory);
+          //  Player = App.DataBase.GetPlayers()[0];
+            //Manipulation.SellingToBank(Player, Factory);
             await DisplayAlert("Успешная продажа", "Вы продали предприятие " + Factory.Name + " за "
                 + Factory.Price/2 +"!!", "ОК");
             await Navigation.PopAsync();
@@ -57,7 +65,7 @@ namespace NeMonopolia3
 
 
         }
-        public Factory FillTheFacroty(Factory factory)
+        public FactoryInf FillTheFacroty(FactoryInf factory)
         {
             factory.Id = 1;
             factory.Name = "KFC";

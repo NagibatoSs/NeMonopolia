@@ -31,9 +31,9 @@ namespace NeMonopolia3
             return p;
         }
 
-        public static List<Factory> GetFactories()
+        public static List<FactoryInf> GetFactories()
         {
-            var f = new Factory();
+            var f = new FactoryInf();
 
             f.Id = 1;
             f.Name = "Bank Zenit";
@@ -44,7 +44,7 @@ namespace NeMonopolia3
            // f.Type = Factory.TypeofFActory.first;
             // f.owner = GetPlayerCharacteristic();
 
-            var f1 = new Factory();
+            var f1 = new FactoryInf();
 
             f1.Id = 2;
             f1.Name = "Tatar Bazar";
@@ -55,7 +55,7 @@ namespace NeMonopolia3
            // f1.Type = Factory.TypeofFActory.second;
             //  f1.owner = GetPlayerCharacteristic();
 
-            var list = new List<Factory>();
+            var list = new List<FactoryInf>();
             list.Add(f);
             list.Add(f1);
             return list;

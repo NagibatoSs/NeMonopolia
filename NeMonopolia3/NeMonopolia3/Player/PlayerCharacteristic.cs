@@ -24,7 +24,7 @@ namespace NeMonopolia3
         //public SQLite.TableQuery<Factory> PortfolioId;
         // public List<int> PortfolioId { get; set; }
         [OneToMany]
-        public  List<Factory> Portfolio { get; set; }
+        public  List<FactoryInf> Portfolio { get; set; }
         public bool IsPlaying { get; set; }
         public int StopCount { get; set; }
     }

@@ -12,14 +12,15 @@
 
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2545" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.7.3" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.4" />
     <PackageReference Include="Xamarin.Forms.Maps" Version="5.0.0.2545" />
     <PackageReference Include="ZXing.Net.Mobile.Forms" Version="2.4.1" />
     <PackageReference Include="ZXing.Net.Mobile" Version="2.4.1" />
     <PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
     <PackageReference Include="SQLiteNetExtensions" Version="2.1.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
-    <PackageReference Include="System.Text.Json" Version="7.0.0" />
+    <PackageReference Include="System.Text.Json" Version="7.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="7.0.0" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Xamarin.Forms.Maps" />
@@ -33,6 +34,7 @@
     <None Remove="SQLiteNetExtensions" />
     <None Remove="Newtonsoft.Json" />
     <None Remove="System.Text.Json" />
+    <None Remove="Microsoft.Extensions.Http" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Player\" />
