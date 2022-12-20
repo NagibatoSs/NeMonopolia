@@ -21,8 +21,8 @@ namespace NeMonopolia3
         public string Name { get; set; }
         public int Price { get; set; }
         public string Image { get; set; }
-        public int Rent { get; set; }
-        public int Security { get; set; }
+        public int rent { get; set; }
+        public int security { get; set; }
         public int Bonus { get; set; }
         [ForeignKey(typeof(PlayerCharacteristic))]
         public int OwnerId { get; set; }

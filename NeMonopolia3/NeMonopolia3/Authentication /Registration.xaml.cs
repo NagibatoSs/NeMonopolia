@@ -19,19 +19,22 @@ namespace NeMonopolia3
         {
             await Navigation.PushAsync(new Authorization());
         }
-
+        
         private async void Button_Clicked_1(System.Object sender, System.EventArgs e)
         {
             
-            Player player = new Player() { idPlayer = 2, UserName = "first", Login = "firstLog", Password = "PasFirst", Phone = "11", isBanned = false, Persons = new List<Pers>() { new Pers() } };
+            Player player = new Player() { UserName = name.Text, Login = login.Text, Password = password.Text, Phone = "89", isBanned = false, Persons = new List<Pers>() { new Pers() } };
+            //player.Persons = new List<Pers>();
             CurrentPlayerData.CurPlayer = player;
-            //DBContext.SetPlayers(player);
+            
+           // DBContext.SetPlayers(player);
            // DBContext.SetPlayersByParams(player);
             // DBContext.GetPlayer(2);
             // LocationType location = new LocationType() { Latitude = 56.702538, Longitude = 53.264639 };
             // DBContext.GetStop(location);
-            await Navigation.PushAsync(new PlayerProfile());
+            await Navigation.PushAsync(new NavigationPage(new TeamMenu()));
             
+
         }
     }
 }

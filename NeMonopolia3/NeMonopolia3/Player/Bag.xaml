@@ -3,6 +3,7 @@
 xmlns="http://xamarin.com/schemas/2014/forms"
 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 x:Class="NeMonopolia3.Bag"
+NavigationPage.HasNavigationBar="False"
 BackgroundImage="background.png">
 <StackLayout>
 <CollectionView x:Name="myCollectionView"
@@ -10,8 +11,8 @@ SelectionMode="Single"
 >
 <CollectionView.ItemTemplate>
 <DataTemplate>
-<Frame BorderColor="#5C5C5C" Padding="10" BackgroundColor="White" CornerRadius="10">
-<Grid Padding="10" RowSpacing="5">
+<Frame BorderColor="#5C5C5C" Padding="5"  BackgroundColor="White" CornerRadius="10" Margin="5,5,5,5">
+<Grid Padding="0" RowSpacing="5"  >
 <Grid.RowDefinitions>
 <RowDefinition Height="Auto"/>
 <RowDefinition Height="Auto"/>
@@ -21,44 +22,36 @@ SelectionMode="Single"
 <Grid.ColumnDefinitions>
 <ColumnDefinition Width="Auto"/>
 <ColumnDefinition Width="Auto"/>
+<ColumnDefinition Width="Auto"/>
+<ColumnDefinition Width="Auto"/>
 </Grid.ColumnDefinitions>
-<Image Grid.Column="3"
+<Image Grid.Column="5"
 Grid.RowSpan="5"
 Source="{Binding Image}"
 Aspect="AspectFill"
-HeightRequest="50"
-WidthRequest="50"
+HeightRequest="30"
+Margin="-30,5,1,1"
+WidthRequest="90"
 />
 <Label FontSize="20"
 TextColor="#373132"
 Text="{Binding Name}"
 Grid.Column="0"
-Grid.Row="0"
+Grid.Row="1"
+
+Grid.ColumnSpan="4"
+Grid.RowSpan="1"
 FontAttributes="Bold"/>
 <Label FontSize="16"
 TextColor="#373132"
 Text="Цена:"
 Grid.Column="0"
-Grid.Row="1"
+Grid.Row="2"
 FontAttributes="Bold"
 />
 <Label FontSize="16"
 TextColor="#373132"
 Text="{Binding Price}"
-Grid.Column="1"
-Grid.Row="1"
-FontAttributes="Bold"/>
-<Image Grid.Row="1" Grid.Column="2" Source="profits.png"
-Aspect="AspectFit"
-HorizontalOptions="Start"
-HeightRequest="20"
-WidthRequest="20"
-Margin="0, 0, 0, 0"/>
-<Label FontSize="16" TextColor="#373132" Text="Рента:"
-Grid.Column="0"
-Grid.Row="2"
-FontAttributes="Bold"/>
-<Label FontSize="16" TextColor="#373132" Text="{Binding rent}"
 Grid.Column="1"
 Grid.Row="2"
 FontAttributes="Bold"/>
@@ -68,7 +61,21 @@ HorizontalOptions="Start"
 HeightRequest="20"
 WidthRequest="20"
 Margin="0, 0, 0, 0"/>
-<Image Grid.Row="1" Grid.Column="2" Source="profits.png"
+<Label FontSize="16" TextColor="#373132" Text="Рента:"
+Grid.Column="0"
+Grid.Row="3"
+FontAttributes="Bold"/>
+<Label FontSize="16" TextColor="#373132" Text="{Binding rent}"
+Grid.Column="1"
+Grid.Row="3"
+FontAttributes="Bold"/>
+<Image Grid.Row="3" Grid.Column="2" Source="profits.png"
+Aspect="AspectFit"
+HorizontalOptions="Start"
+HeightRequest="20"
+WidthRequest="20"
+Margin="0, 0, 0, 0"/>
+<Image Grid.Row="2" Grid.Column="2" Source="profits.png"
 Aspect="AspectFit"
 HorizontalOptions="Start"
 HeightRequest="20"
@@ -76,16 +83,16 @@ WidthRequest="20"
 Margin="0, 0, 0, 0"/>
 <Label FontSize="16" TextColor="#373132" Text="{Binding security}"
 Grid.Column="1"
-Grid.Row="3"
+Grid.Row="4"
 FontAttributes="Bold"/>
 <Label FontSize="16" TextColor="#373132" Text="Охрана:"
 Grid.Column="0"
-Grid.Row="3"
+Grid.Row="4"
 FontAttributes="Bold"/>
 <Label FontSize="16" TextColor="#373132" Text="%"
 Grid.Column="1"
 Margin="23,0,0,0"
-Grid.Row="3"
+Grid.Row="4"
 FontAttributes="Bold"/>
 </Grid>
 </Frame>

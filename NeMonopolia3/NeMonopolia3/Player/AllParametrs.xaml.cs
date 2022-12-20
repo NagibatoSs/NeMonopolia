@@ -11,6 +11,11 @@ namespace NeMonopolia3
         {
             InitializeComponent();
         }
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+
+        }
     }
 }
 

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Linq;
 using Xamarin.Forms;
 
 namespace NeMonopolia3
@@ -16,9 +17,16 @@ namespace NeMonopolia3
         protected override  void OnAppearing()
         {
             base.OnAppearing();
-            var test = App.DataBase.GetPlayers();
-            var list = test[0].Portfolio;
-            myCollectionView.ItemsSource = list;
+            var bag = CurrentPlayerData.CurPlayer.Persons.Last().Holds;
+            //var test = App.DataBase.GetPlayers();
+            //var list = test[0].Portfolio;
+            List<Factory> factories = new List<Factory>();
+            var changing = new List<FactoryInf>();
+            foreach (var e in bag)
+                changing.Add(new FactoryInf() { Name =e.Factory.Title, Image =e.Factory.Image, Price = (int)e.Factory.BasePrice,rent = 50000, security = 56 });
+            //foreach (var e in bag)
+            //    factories.Add(e.Factory);
+            myCollectionView.ItemsSource = changing;
         }
 
         async void Button_Clicked(System.Object sender, System.EventArgs e)

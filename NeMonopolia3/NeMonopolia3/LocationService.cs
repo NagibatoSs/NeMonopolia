@@ -33,13 +33,13 @@ namespace NeMonopolia3
 		//	};
 		//	return stop;
 		//}
-		public bool CompareToTs(Location player, Location TS)
+		public static bool CompareToTs(Location player, Location TS)
 		{
 			Location playerLoc = new Location(player.Latitude, player.Longitude);
 			Location TsLoc = new Location(TS.Latitude, TS.Longitude);
 			double miles = Location.CalculateDistance(playerLoc, TsLoc, DistanceUnits.Kilometers);
-			//if (miles > 1) return false; else return true;
-			return true;
+			if (miles > 1) return false; else return true;
+			//return true;
         }
 	}
 }

@@ -14,6 +14,7 @@ BackgroundImage="background.png">
 <StackLayout BackgroundColor="White" >
 <Label TextColor="#373132" FontFamily="HeliosCond" Text="Игрок" x:Name="playerName" FontSize="Large"/>
 <Label TextColor="#8C8C8C" FontFamily="HeliosCond" Text="Название команды" x:Name="TeamName" FontSize="Medium"/>
+                <Label TextColor="#8C8C8C" FontFamily="HeliosCond" Text="" x:Name="TeamId" FontSize="Medium"/>
 <Label TextColor="#F7941E" FontFamily="HeliosCond" Text="Остановок до бонуса: 0" x:Name="StopsLeft" FontSize="Medium"/>
 </StackLayout>
 </Frame>

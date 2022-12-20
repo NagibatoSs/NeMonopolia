@@ -2,10 +2,11 @@
 xmlns="http://xamarin.com/schemas/2014/forms"
 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 x:Class="NeMonopolia3.ActionView"
+NavigationPage.HasNavigationBar="False"
 BackgroundImage="background.png">
 <StackLayout>
     <StackLayout Orientation="Horizontal">
-
+ 
         <Label Text="Выберите дальнейшее действие"
 VerticalOptions="Center"
 HorizontalTextAlignment="Center"
@@ -35,20 +36,23 @@ Clicked="ImageButton_Clicked"
 <ColumnDefinition></ColumnDefinition>
 <ColumnDefinition></ColumnDefinition>
 </Grid.ColumnDefinitions>
-<Image Grid.Row="0" Grid.Column="1" Source="busstop.jpg"
+<Image x:Name="omg" Grid.Row="0" Grid.Column="1" Source="busstop.jpg"
+       
 Aspect="AspectFit"
 HorizontalOptions="Center"
 WidthRequest="150"/>
+            <StackLayout>
 <Label x:Name="fName" Grid.Row="0" Grid.Column="0" Text="Название остановки"
 VerticalOptions="Center"
 HorizontalTextAlignment="Start"
-FontSize="40"
+FontSize="25"
 FontFamily="HeliosCond"
 Margin="30, 0, 0, 30"
 TextColor="White"
 />
+            </StackLayout>
 </Grid>
-<Label Text="Информация"
+<Label x:Name="info"  Text="Информация"
 VerticalOptions="Center"
 HorizontalTextAlignment="Start"
 FontSize="Large"
@@ -57,7 +61,7 @@ FontFamily="HeliosCond"
 Margin="10, 5, 0, 0"
 TextColor="#212325"
 />
-<StackLayout Orientation="Horizontal">
+<StackLayout x:Name="rent"  Orientation="Horizontal">
 <Label x:Name="fRent" Text="Информация"
 VerticalOptions="Center"
 HorizontalTextAlignment="Start"
@@ -67,7 +71,7 @@ FontFamily="HeliosCond"
 TextColor="#212325"
 Margin="10, 2, 0, 0"
 />
-<Image Grid.Row="0" Grid.Column="1" Source="profits.png"
+<Image x:Name="imageProf"  Grid.Row="0" Grid.Column="1" Source="profits.png"
 Aspect="AspectFit"
 HorizontalOptions="Start"
 HeightRequest="25"
@@ -75,6 +79,7 @@ WidthRequest="25"
 Margin="0, 2, 0, 0"
 />
 </StackLayout>
+        <StackLayout x:Name="secure">
 <Label x:Name="fSecurity" Text="Информация"
 VerticalOptions="Center"
 HorizontalTextAlignment="Start"
@@ -84,17 +89,31 @@ FontFamily="HeliosCond"
 TextColor="#212325"
 Margin="10, 2, 0, 0"
 />
-<StackLayout Orientation="Horizontal">
+            </StackLayout>
+ <StackLayout x:Name="changer">
+<Label x:Name="change" Text="Информация"
+VerticalOptions="Center"
+HorizontalTextAlignment="Start"
+FontSize="Medium"
+FontAttributes="None"
+FontFamily="HeliosCond"
+TextColor="#212325"
+                     IsVisible="false"
+Margin="10, 2, 0, 0"
+/>
+            </StackLayout>
+<StackLayout x:Name="price" Orientation="Horizontal">
 <Label x:Name="fPrice" Grid.Row="0" Grid.Column="0" Text="565.99"
 VerticalOptions="Center"
 HorizontalTextAlignment="Start"
 FontSize="Large"
+
 FontAttributes="None"
 FontFamily="HeliosCond"
 TextColor="#212325"
 Margin="10, 10, 0, 0"
 />
-<Image Grid.Row="0" Grid.Column="1" Source="profits.png"
+<Image x:Name="imageProfTwo"  Grid.Row="0" Grid.Column="1" Source="profits.png"
 Aspect="AspectFit"
 HorizontalOptions="Start"
 HeightRequest="25"
@@ -103,8 +122,9 @@ Margin="0, 10, 0, 0"
 />
 </StackLayout>
 
-<StackLayout Spacing="20" Margin="0, 20, 0, 0">
+<StackLayout  Spacing="20" Margin="0, 20, 0, 0">
 <Button Text="Купить"
+        x:Name="buy"
 HorizontalOptions="Center"
 VerticalOptions="CenterAndExpand"
 BackgroundColor="#F7941E"
@@ -114,7 +134,7 @@ HeightRequest="60"
 FontSize="Medium"
 TextColor="white"
 Clicked="Button_Clicked"/>
-<Button Text="Продать" HorizontalOptions="Center"
+<Button x:Name="sell" Text="Продать" HorizontalOptions="Center"
 VerticalOptions="CenterAndExpand"
 BackgroundColor="#F7941E"
 CornerRadius="15"
@@ -123,7 +143,7 @@ HeightRequest="60"
 FontSize="Medium"
 TextColor="white"
         Clicked="Button_Clicked_1"/>
-<Button Text="Пропустить" HorizontalOptions="Center"
+<Button x:Name="pass" Text="Пропустить" HorizontalOptions="Center"
 VerticalOptions="CenterAndExpand"
 BackgroundColor="#F7941E"
 CornerRadius="15"
@@ -132,9 +152,9 @@ HeightRequest="60"
 FontSize="Medium"
 TextColor="white"
         Clicked="Button_Clicked_2"/>
-    <StackLayout Orientation="Horizontal">
+    <StackLayout x:Name="balance" Orientation="Horizontal">
         
-            <Label x:Name="pBalance"  Text="Баланс: " 
+<Label  x:Name="pBalance"  Text="Баланс: " 
 VerticalOptions="Center"
                    HorizontalOptions="Center"
 HorizontalTextAlignment="Center"

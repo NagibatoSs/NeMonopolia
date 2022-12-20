@@ -14,7 +14,8 @@ namespace NeMonopolia3
 	{
         public static ServerClass GetAPI(string code)
         {
-            string Code = "https://testapi.igis-transport.ru/game-wMdF23UUDp0iasAK/ts/" + code;
+            // string Code = "https://testapi.igis-transport.ru/game-wMdF23UUDp0iasAK/ts/" + code;
+            string Code = "https://testapi.igis-transport.ru/game-wMdF23UUDp0iasAK/ts/18-001-1-0005392";
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(Code);
             HttpWebResponse response = (HttpWebResponse)request.GetResponse();
             Stream stream = response.GetResponseStream();

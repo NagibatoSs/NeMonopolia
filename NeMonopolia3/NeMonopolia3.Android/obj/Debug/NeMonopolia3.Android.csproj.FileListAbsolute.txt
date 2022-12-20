@@ -818,3 +818,5 @@
 /Users/ilyas/Projects/NeMonopolia/NeMonopolia3/NeMonopolia3.Android/obj/Debug/androidx/proguard/de4efd48-e41a-4c22-b480-db517c3ae23b.txt
 /Users/ilyas/Projects/NeMonopolia/NeMonopolia3/NeMonopolia3.Android/obj/Debug/androidx/proguard/e9240ca3-587b-49d4-a75d-892af32635fb.txt
 /Users/ilyas/Projects/NeMonopolia/NeMonopolia3/NeMonopolia3.Android/obj/Debug/androidx/proguard/ecf8ce0c-e206-417d-be8d-5dd73c2fa83d.txt
+/Users/ilyas/Projects/NeMonopolia/NeMonopolia3/NeMonopolia3.Android/obj/Debug/res/drawable/istu.jpeg
+/Users/ilyas/Projects/NeMonopolia/NeMonopolia3/NeMonopolia3.Android/obj/Debug/res/drawable/med.jpeg

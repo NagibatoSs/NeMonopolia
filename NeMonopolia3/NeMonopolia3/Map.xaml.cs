@@ -26,23 +26,27 @@ namespace NeMonopolia3
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            // HttpWebRequest request = (HttpWebRequest)WebRequest.Create(
-            //     "https://testapi.igis-transport.ru/game-wMdF23UUDp0iasAK/ts/18-002-3-0000526");
-            // HttpWebResponse response = (HttpWebResponse)request.GetResponse();
-            // Stream stream = response.GetResponseStream();
-            // StreamReader sr = new StreamReader(stream);
 
-            // string sReadData = sr.ReadToEnd();
-            // response.Close();
+            pricename.Text = CurrentPlayerData.CurPers.Money.ToString();
+            DataOfStop.Loading();
+            
+            //HttpWebRequest request = (HttpWebRequest)WebRequest.Create(
+            //    Code);
+            //HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+            //Stream stream = response.GetResponseStream();
+            //StreamReader sr = new StreamReader(stream);
+
+            //string sReadData = sr.ReadToEnd();
+            //response.Close();
 
             //// dynamic result = JsonConvert.DeserializeObject<ServerClass>(sReadData);
 
-            // ServerClass result = JsonConvert.DeserializeObject<ServerClass>(sReadData);
-            // locationTs = new Location();
-            // locationTs.Longitude = result.data.longitude;
-            // locationTs.Latitude = result.data.latitude;
+            //ServerClass result = JsonConvert.DeserializeObject<ServerClass>(sReadData);
+            //locationTs = new Location();
+            //locationTs.Longitude = result.data.longitude;
+            //locationTs.Latitude = result.data.latitude;
 
-          // -// pricename.Text = App.DataBase.GetPlayers()[0].Money.ToString();
+            // -// pricename.Text = App.DataBase.GetPlayers()[0].Money.ToString();
 
             //HttpWebRequest request = (HttpWebRequest)WebRequest.Create(
             //    "https://testapi.igis-transport.ru/game-wMdF23UUDp0iasAK/ts/18-001-1-0005705");
@@ -56,7 +60,7 @@ namespace NeMonopolia3
             ////dynamic result = JsonConvert.DeserializeObject<ServerClass>(sReadData);
             //ServerClass result = JsonConvert.DeserializeObject<ServerClass>(sReadData);
 
-          //-  //var result = APIclass.GetAPI(Code);
+            //-  //var result = APIclass.GetAPI(Code);
             //locationTs = new Location();
             //locationTs.Longitude = result.data.longitude;
             //locationTs.Latitude = result.data.latitude;
@@ -85,27 +89,76 @@ namespace NeMonopolia3
         //}
         async void Button_Clicked(System.Object sender, System.EventArgs e)
         {
-           await DisplayAlert("Внимание", "Пожалуйста подождите 1 минуту", "OK");
-            var stop = new Stop();
-            var result = await Geolocation.GetLocationAsync(new GeolocationRequest(GeolocationAccuracy.Default));
-            var geo = new LocationType() {Latitude=result.Latitude, Longitude=result.Longitude };
-            DBContext.GetStop(geo,stop);
-            if (stop.TItle == null)
+
+
+            //HttpWebRequest request = (HttpWebRequest)WebRequest.Create(
+            //    Code);
+            //HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+            //Stream stream = response.GetResponseStream();
+            //StreamReader sr = new StreamReader(stream);
+
+            //string sReadData = sr.ReadToEnd();
+            //response.Close();
+
+            //// dynamic result = JsonConvert.DeserializeObject<ServerClass>(sReadData);
+
+            //ServerClass serverTs = JsonConvert.DeserializeObject<ServerClass>(sReadData);
+            //locationTs = new Location();
+            //locationTs.Longitude = serverTs.data.longitude;
+            //locationTs.Latitude = serverTs.data.latitude;
+            await DisplayAlert("Внимание", "Пожалуйста, подождите 30 секунд", "ОК");
+            //var stop = new Stop();
+            //var result = await Geolocation.GetLocationAsync(new GeolocationRequest(GeolocationAccuracy.Default));
+            //var geo = new LocationType() {Latitude=result.Latitude, Longitude=result.Longitude };
+            //DBContext.GetStop(geo,stop);
+            //if (stop.TItle == null)
+            //{
+            //    DisplayAlert("Attention", "Вы не на остановке", "OK");
+            //    return;
+            //}
+            //else if (LocationService.CompareToTs(result, locationTs)==true)
+            //{
+
+
+            Thread.Sleep(10000);
+            //        result = await Geolocation.GetLocationAsync(new GeolocationRequest(GeolocationAccuracy.Default));
+            //        geo = new LocationType() { Latitude = result.Latitude, Longitude = result.Longitude };
+            //        DBContext.GetStop(geo, stop);
+            //        if (stop.TItle == null)
+            //            DisplayAlert("Attention", "Вы не на остановке", "OK");
+            //        else
+            //        {
+            //        if (LocationService.CompareToTs(result, locationTs) == false)
+            //        {
+            //await Navigation.PushAsync(new ActionView(stop));
+            //      var test = new Stop() { TItle = "title", idStop = 2, chCommunication = 1, chIntellect = 2, chLuck = 3, chHonesty = 4, };
+            // DBContext.GetStopById(9);
+
+
+
+            if (CurrentPlayerData.flag == true)
             {
-                DisplayAlert("Attention", "Вы не на остановке", "OK");
-                return;
+                CurrentPlayerData.CurStop = DataOfStop.lStops[0];
+                CurrentPlayerData.flag = false;
             }
             else
             {
-                Thread.Sleep(30000);
-                result = await Geolocation.GetLocationAsync(new GeolocationRequest(GeolocationAccuracy.Default));
-                geo = new LocationType() { Latitude = result.Latitude, Longitude = result.Longitude };
-                DBContext.GetStop(geo,stop);
-                if (stop.TItle == null)
-                    DisplayAlert("Attention", "Вы не на остановке", "OK");
-                else
-                    await Navigation.PushAsync(new ActionView(stop));
+                CurrentPlayerData.CurStop = DataOfStop.lStops[1];
             }
+
+            //CurrentPlayerData.CurStop = DataOfStop.lStops[0];
+            //CurrentPlayerData.flag = false;
+            //Thread.Sleep(30000);
+            await Navigation.PushAsync(new ActionView());
+            //        }
+            //        }
+                
+            //}
+
+            ///here
+            ///
+
+
             //if (Comparing())
             //{
             //    await Navigation.PushAsync(new ActionView());

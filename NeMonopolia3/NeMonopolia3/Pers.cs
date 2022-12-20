@@ -1,11 +1,16 @@
 ﻿using System;
+using System.Collections.Generic;
+
 namespace NeMonopolia3
 {
+    [Serializable]
 	public class Pers
 	{
         public int idPers { get; set; }
 
         public int? idPlayer { get; set; }
+
+        public int? HoldId { get; set; }
 
         public virtual Player Player { get; set; }
 
@@ -16,7 +21,8 @@ namespace NeMonopolia3
         
         public string NickName { get; set; }
 
-        
+        public virtual List<Hold> Holds { get; set; }
+
         public string Avatar { get; set; }
 
         public int? Money { get; set; }

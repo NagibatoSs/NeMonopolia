@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+xmlns="http://xamarin.com/schemas/2014/forms"
+xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+x:Class="NeMonopolia3.ChooseProfession"
+NavigationPage.HasNavigationBar="False"
+BackgroundImage="background.png">
+<StackLayout>
+<Label Text="Выбор профессии" Margin="20, 0, 20, 0" Padding="5, 5" TextColor="White" FontSize="22" HorizontalTextAlignment="Start"></Label>
+<Frame Margin="20, 0" Padding="15, 5" CornerRadius="10" BackgroundColor="White">
+<StackLayout>
+<Label Text="Батюшка" TextColor="#373132" FontFamily="HeliosCond" FontAttributes="Bold" FontSize="18"></Label>
+<StackLayout Orientation="Horizontal">
+<Label x:Name="SInt" Text="Интеллект: 55" TextColor="#373132" FontFamily="HeliosCond" FontSize="12" Margin="0, 0, 35, 0"></Label>
+<Label x:Name="SHon" Text="Честность: 80" TextColor="#373132" FontFamily="HeliosCond" FontSize="12"></Label>
+</StackLayout>
+<StackLayout Orientation="Horizontal">
+<Label x:Name="SLuc" Text="Удача: 20" TextColor="#373132" FontFamily="HeliosCond" FontSize="12" Margin="0, 0, 60, 0"></Label>
+<Label x:Name="SCom" Text="Коммуникабельность: 40" TextColor="#373132" FontFamily="HeliosCond" FontSize="12"></Label>
+</StackLayout>
+<Button Clicked="S_Clicked" x:Name="S" Text="Выбрать" HorizontalOptions="Start"
+VerticalOptions="CenterAndExpand"
+BackgroundColor="#F7941E"
+CornerRadius="15"
+WidthRequest="100"
+HeightRequest="32"
+FontSize="10"
+TextColor="white"></Button>
+</StackLayout>
+</Frame>
+<Frame Margin="20, 0" Padding="15, 5" CornerRadius="10" BackgroundColor="White">
+<StackLayout>
+<Label Text="Вор в законе" TextColor="#373132" FontFamily="HeliosCond" FontAttributes="Bold" FontSize="18"></Label>
+<StackLayout Orientation="Horizontal">
+<Label x:Name="VInt" Text="Интеллект: 30" TextColor="#373132" FontFamily="HeliosCond" FontSize="12" Margin="0, 0, 35, 0"></Label>
+<Label x:Name="VHon" Text="Честность: 20" TextColor="#373132" FontFamily="HeliosCond" FontSize="12"></Label>
+</StackLayout>
+<StackLayout Orientation="Horizontal">
+<Label x:Name="VLuc" Text="Удача: 55" TextColor="#373132" FontFamily="HeliosCond" FontSize="12" Margin="0, 0, 60, 0"></Label>
+<Label x:Name="VCom"  Text="Коммуникабельность: 45" TextColor="#373132" FontFamily="HeliosCond" FontSize="12"></Label>
+</StackLayout>
+<Button Clicked="V_Clicked" x:Name="V" Text="Выбрать" HorizontalOptions="Start"
+VerticalOptions="CenterAndExpand"
+BackgroundColor="#F7941E"
+CornerRadius="15"
+WidthRequest="100"
+HeightRequest="32"
+FontSize="10"
+TextColor="white"></Button>
+</StackLayout>
+</Frame>
+<Frame Margin="20, 0" Padding="15, 5" CornerRadius="10" BackgroundColor="White">
+<StackLayout>
+<Label Text="Депутат" TextColor="#373132" FontFamily="HeliosCond" FontAttributes="Bold" FontSize="18"></Label>
+<StackLayout Orientation="Horizontal">
+<Label x:Name="DInt" Text="Интеллект: 20" TextColor="#373132" FontFamily="HeliosCond" FontSize="12" Margin="0,0,35,0"/>
+
+<Label x:Name="DHon" Text="Честность: 35" TextColor="#373132" FontFamily="HeliosCond" FontSize="12"></Label>
+</StackLayout>
+<StackLayout Orientation="Horizontal">
+<Label x:Name="DLuc" Text="Удача: 30" TextColor="#373132" FontFamily="HeliosCond" FontSize="12" Margin="0, 0, 60, 0"></Label>
+<Label x:Name="DCom" Text="Коммуникабельность: 80" TextColor="#373132" FontFamily="HeliosCond" FontSize="12"></Label>
+</StackLayout>
+<Button Clicked="D_Clicked" x:Name="D" Text="Выбрать" HorizontalOptions="Start"
+VerticalOptions="CenterAndExpand"
+BackgroundColor="#F7941E"
+CornerRadius="15"
+WidthRequest="100"
+HeightRequest="32"
+FontSize="10"
+TextColor="white"></Button>
+</StackLayout>
+</Frame>
+<Frame Margin="20, 0" Padding="15, 5" CornerRadius="10" BackgroundColor="White">
+<StackLayout>
+<Label Text="Работник завода" TextColor="#373132" FontFamily="HeliosCond" FontAttributes="Bold" FontSize="18"></Label>
+<StackLayout Orientation="Horizontal">
+<Label x:Name="RInt" Text="Интеллект: 25" TextColor="#373132" FontFamily="HeliosCond" FontSize="12" Margin="0, 0, 35, 0"></Label>
+<Label x:Name="RHon" Text="Честность: 70" TextColor="#373132" FontFamily="HeliosCond" FontSize="12"></Label>
+</StackLayout>
+<StackLayout Orientation="Horizontal">
+<Label x:Name="RLuc" Text="Удача: 80" TextColor="#373132" FontFamily="HeliosCond" FontSize="12" Margin="0, 0, 60, 0"></Label>
+<Label x:Name="RCom" Text="Коммуникабельность: 30" TextColor="#373132"
+FontFamily="HeliosCond" FontSize="12"></Label>
+</StackLayout>
+<Button  Clicked="R_Clicked" x:Name="R" Text="Выбрать" HorizontalOptions="Start"
+VerticalOptions="CenterAndExpand"
+BackgroundColor="#F7941E"
+CornerRadius="15"
+WidthRequest="100"
+HeightRequest="32"
+FontSize="10"
+TextColor="white"></Button>
+</StackLayout>
+</Frame>
+<Frame Margin="20, 0" Padding="15, 5" CornerRadius="10" BackgroundColor="White">
+<StackLayout>
+<Label Text="Илон Маск" TextColor="#373132" FontFamily="HeliosCond" FontAttributes="Bold" FontSize="18"></Label>
+<StackLayout Orientation="Horizontal">
+<Label x:Name="MInt" Text="Интеллект: 80" TextColor="#373132" FontFamily="HeliosCond" FontSize="12" Margin="0, 0, 35, 0"></Label>
+<Label x:Name="MHon" Text="Честность: 30" TextColor="#373132" FontFamily="HeliosCond" FontSize="12"></Label>
+</StackLayout>
+<StackLayout Orientation="Horizontal">
+<Label x:Name="MLuc" Text="Удача: 10" TextColor="#373132" FontFamily="HeliosCond" FontSize="12" Margin="0, 0, 60, 0"></Label>
+<Label x:Name="MCom" Text="Коммуникабельность: 55" TextColor="#373132" FontFamily="HeliosCond" FontSize="12"></Label>
+</StackLayout>
+<Button Clicked="M_Clicked" x:Name="M" Text="Выбрать" HorizontalOptions="Start"
+VerticalOptions="CenterAndExpand"
+BackgroundColor="#F7941E"
+CornerRadius="15"
+WidthRequest="100"
+HeightRequest="32"
+FontSize="10"
+TextColor="white"></Button>
+</StackLayout>
+</Frame>
+</StackLayout>
+</ContentPage>

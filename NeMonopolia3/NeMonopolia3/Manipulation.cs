@@ -19,7 +19,9 @@ namespace NeMonopolia3
             //hold.idFactory==factory.idFactory
             //hold.Pers.idPers != hold.factory.OwnerId
             //factory.Holds == null
-            if ((factory.Holds != null || factory.Holds.Count !=0) && (hold.idPers != CurrentPlayerData.CurPlayer.Persons.Last().idPers)) ///// warning null is not sutible need start with 0
+            var player = CurrentPlayerData.CurPlayer.Persons.Last();
+           // player.Holds = new List<Hold>();
+            if (factory.Holds[0].Pers != null )
             {
                 
                 PayRent(CurrentPlayerData.CurPlayer.Persons.Last(), factory);
@@ -30,13 +32,14 @@ namespace NeMonopolia3
                 return; //not enough money maan можно эксептион
             }
             CurrentPlayerData.CurPlayer.Persons.Last().Money = CurrentPlayerData.CurPlayer.Persons.Last().Money - factory.BasePrice;
-            //player = ChangeCharacteristics(player, factory);
-            //player.Portfolio.Add(factory);
+           // player = ChangeCharacteristics(player, factory.Stop);
+            player.Holds.Add(hold);
+           // player.Portfolio.Add(factory);
             //App.DataBase.SaveChildrens(new List<FactoryInf> { factory });
             //App.DataBase.UpdateChildrens(factory);
             //App.DataBase.UpdateChildrens(player);
             //var show = App.DataBase.GetPlayers();
-            var i = 0;
+            //var i = 0;
         }
 
         //public async void Alerting()
@@ -75,13 +78,13 @@ namespace NeMonopolia3
         {
             return 1;
         }
-        public static PlayerCharacteristic ChangeCharacteristics(PlayerCharacteristic player, FactoryInf factory)
+        public static Pers ChangeCharacteristics(Pers player, Stop stop)
         {
             //создать класс характеристик в виде справочника
-            player.Honesty += factory.ChangerHonesty;
-            player.Intellect += factory.ChangerIntellect;
-            player.Communication += factory.ChangerCommunication;
-            player.Luck += factory.ChangerLuck;
+            player.Honesty += stop.chHonesty;
+            player.Intellect += stop.chIntellect;
+            player.Communication += stop.chCommunication;
+            player.Luck += stop.chLuck;
             return player;
         }
         public static void CheckBonus(PlayerCharacteristic player)
@@ -92,16 +95,24 @@ namespace NeMonopolia3
                 player.StopCount = 0;
             }
         }
-        public static void SellingToBank(PlayerCharacteristic player, FactoryInf factory)
-        {            
-            player.Money += factory.Price / 2;
+        public static void SellingToBank(Hold hold, Factory factory)
+        {
+            var player = CurrentPlayerData.CurPlayer.Persons.Last();
+            player.Money += factory.BasePrice / 2;
+            //hold.Pers.Money += factory.BasePrice / 2;
+            //player.Money += factory.Factory.Rates[0].Rent / 2;
+            player.Holds.Remove(hold);
+            hold.Pers = null;
+            
+            //player.Holds.Remove(factory);
 
-            var deleting = player.Portfolio.Where(f => f.Name == factory.Name);
-            player.Portfolio.Remove(deleting.First()); ///take it easy maaaaaaaaaaaaaaaaaaaan
-            factory.OwnerId = 0; ///levell find ...
-            App.DataBase.SaveChildrens(new List<FactoryInf> { factory });
-            App.DataBase.UpdateChildrens(factory);
-            App.DataBase.UpdateChildrens(player);
+            //var deleting = player.Portfolio.Where(f => f.Name == factory.Name);
+            //player.Portfolio.Remove(deleting.First()); ///take it easy maaaaaaaaaaaaaaaaaaaan
+            //factory.OwnerId = 0; ///levell find ...
+
+            //App.DataBase.SaveChildrens(new List<FactoryInf> { factory });
+            //App.DataBase.UpdateChildrens(factory);
+            //App.DataBase.UpdateChildrens(player);
 
         }
 

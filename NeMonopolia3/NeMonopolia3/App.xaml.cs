@@ -31,7 +31,7 @@ namespace NeMonopolia3
         public App()
         {
             InitializeComponent();           
-           // MainPage = new Registration();
+           // MainPage = new TeamMenu();
             MainPage = new NavigationPage(new Registration());
         }
         

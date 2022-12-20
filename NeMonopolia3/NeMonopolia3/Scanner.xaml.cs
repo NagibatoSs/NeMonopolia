@@ -28,8 +28,23 @@ namespace NeMonopolia3
             var Code = FindCode(code);
             ServerClass serverClass = APIclass.GetAPI(code);
             string route =  serverClass.data.route;
-            DisplayAlert("Поздравляю","Вы вошли в ТС" + route,"OK");            
-            await Navigation.PushAsync(new Map(code)); //передаем код ТС
+            string ts = "";
+
+            switch (serverClass.data.ts_type)
+            {
+                case "bus":
+                    ts = "автобус";
+                    break;
+                case "trolleybus":
+                    ts = "троллейбус";
+                    break;
+                case "tram":
+                    ts = "трамвай";
+                    break;
+            }
+           // string desc = serverClass.data.status_Discription;
+            DisplayAlert("Поздравляю","Вы вошли в "+ ts +" по маршруту номер " + route ,"OK");            
+            await Navigation.PushAsync(new TabPage()); //передаем код ТС
         }
         public string FindCode(string code)
         {

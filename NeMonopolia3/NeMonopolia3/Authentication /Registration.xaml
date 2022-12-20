@@ -5,7 +5,7 @@
     NavigationPage.HasNavigationBar="False">
    <StackLayout BackgroundColor="#FFFFFF">
 <Label Text="Регистрация"
-VerticalOptions="Center"
+       x:Name ="test"
 HorizontalTextAlignment="Center"
 FontSize="Large"
 FontAttributes="Bold"
@@ -28,7 +28,7 @@ TextColor="#212325"
 </Frame>
 <StackLayout Orientation="Horizontal" Spacing="0" Margin="10,0,20,20">
 <CheckBox Color="#034EA2" HorizontalOptions="Start" VerticalOptions="Center" />
-<Label Text="Принимаю условиея конфидициальности " VerticalOptions="Center" HorizontalOptions="StartAndExpand"/>
+<Label Text="Принимаю условия конфиденциальности " VerticalOptions="Center" HorizontalOptions="StartAndExpand"/>
 </StackLayout>
 <Button Text="Зарегистрироваться" WidthRequest="80" CornerRadius="15"
 BackgroundColor="#F7941E"
